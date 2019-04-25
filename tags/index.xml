@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Jade Meskill</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Jade Meskill</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Jun 2015 17:31:22 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>amazon</title>
+      <link>/tags/amazon/</link>
+      <pubDate>Sat, 13 Jun 2015 17:31:22 +0000</pubDate>
+      
+      <guid>/tags/amazon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aws</title>
+      <link>/tags/aws/</link>
+      <pubDate>Sat, 13 Jun 2015 17:31:22 +0000</pubDate>
+      
+      <guid>/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>/tags/devops/</link>
+      <pubDate>Sat, 13 Jun 2015 17:31:22 +0000</pubDate>
+      
+      <guid>/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>/tags/docker/</link>
+      <pubDate>Sat, 13 Jun 2015 17:31:22 +0000</pubDate>
+      
+      <guid>/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>elb</title>
+      <link>/tags/elb/</link>
+      <pubDate>Sat, 13 Jun 2015 17:31:22 +0000</pubDate>
+      
+      <guid>/tags/elb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>infrastructure</title>
+      <link>/tags/infrastructure/</link>
+      <pubDate>Sat, 13 Jun 2015 17:31:22 +0000</pubDate>
+      
+      <guid>/tags/infrastructure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>/tags/kubernetes/</link>
+      <pubDate>Sat, 13 Jun 2015 17:31:22 +0000</pubDate>
+      
+      <guid>/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>agile</title>
+      <link>/tags/agile/</link>
+      <pubDate>Mon, 27 Jan 2014 15:25:24 +0000</pubDate>
+      
+      <guid>/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>autonomy</title>
+      <link>/tags/autonomy/</link>
+      <pubDate>Mon, 27 Jan 2014 15:25:24 +0000</pubDate>
+      
+      <guid>/tags/autonomy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>theses</title>
+      <link>/tags/theses/</link>
+      <pubDate>Mon, 27 Jan 2014 15:25:24 +0000</pubDate>
+      
+      <guid>/tags/theses/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gangplank</title>
+      <link>/tags/gangplank/</link>
+      <pubDate>Sat, 14 Sep 2013 04:52:50 +0000</pubDate>
+      
+      <guid>/tags/gangplank/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PBS</title>
+      <link>/tags/pbs/</link>
+      <pubDate>Sat, 14 Sep 2013 04:52:50 +0000</pubDate>
+      
+      <guid>/tags/pbs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>video</title>
+      <link>/tags/video/</link>
+      <pubDate>Sat, 14 Sep 2013 04:52:50 +0000</pubDate>
+      
+      <guid>/tags/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hacking</title>
+      <link>/tags/hacking/</link>
+      <pubDate>Fri, 13 Sep 2013 05:52:29 +0000</pubDate>
+      
+      <guid>/tags/hacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>humanity</title>
+      <link>/tags/humanity/</link>
+      <pubDate>Fri, 13 Sep 2013 05:52:29 +0000</pubDate>
+      
+      <guid>/tags/humanity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>speaking</title>
+      <link>/tags/speaking/</link>
+      <pubDate>Fri, 13 Sep 2013 05:52:29 +0000</pubDate>
+      
+      <guid>/tags/speaking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tedx</title>
+      <link>/tags/tedx/</link>
+      <pubDate>Fri, 13 Sep 2013 05:52:29 +0000</pubDate>
+      
+      <guid>/tags/tedx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tedxlivermore</title>
+      <link>/tags/tedxlivermore/</link>
+      <pubDate>Fri, 13 Sep 2013 05:52:29 +0000</pubDate>
+      
+      <guid>/tags/tedxlivermore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Core Protocols</title>
+      <link>/tags/core-protocols/</link>
+      <pubDate>Wed, 26 Jun 2013 15:27:15 +0000</pubDate>
+      
+      <guid>/tags/core-protocols/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Decider</title>
+      <link>/tags/decider/</link>
+      <pubDate>Wed, 26 Jun 2013 15:27:15 +0000</pubDate>
+      
+      <guid>/tags/decider/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>decisions</title>
+      <link>/tags/decisions/</link>
+      <pubDate>Wed, 26 Jun 2013 15:27:15 +0000</pubDate>
+      
+      <guid>/tags/decisions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>leadership</title>
+      <link>/tags/leadership/</link>
+      <pubDate>Wed, 26 Jun 2013 15:27:15 +0000</pubDate>
+      
+      <guid>/tags/leadership/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>teams</title>
+      <link>/tags/teams/</link>
+      <pubDate>Wed, 26 Jun 2013 15:27:15 +0000</pubDate>
+      
+      <guid>/tags/teams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coaching</title>
+      <link>/tags/coaching/</link>
+      <pubDate>Wed, 25 Apr 2012 01:32:01 +0000</pubDate>
+      
+      <guid>/tags/coaching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>facilitation</title>
+      <link>/tags/facilitation/</link>
+      <pubDate>Wed, 25 Apr 2012 01:32:01 +0000</pubDate>
+      
+      <guid>/tags/facilitation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>toolbox</title>
+      <link>/tags/toolbox/</link>
+      <pubDate>Wed, 25 Apr 2012 01:32:01 +0000</pubDate>
+      
+      <guid>/tags/toolbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>toolkit</title>
+      <link>/tags/toolkit/</link>
+      <pubDate>Wed, 25 Apr 2012 01:32:01 +0000</pubDate>
+      
+      <guid>/tags/toolkit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>#protip</title>
+      <link>/tags/#protip/</link>
+      <pubDate>Mon, 23 Apr 2012 18:50:05 +0000</pubDate>
+      
+      <guid>/tags/#protip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lunch</title>
+      <link>/tags/lunch/</link>
+      <pubDate>Mon, 23 Apr 2012 18:50:05 +0000</pubDate>
+      
+      <guid>/tags/lunch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scrum</title>
+      <link>/tags/scrum/</link>
+      <pubDate>Wed, 24 Nov 2010 06:16:35 +0000</pubDate>
+      
+      <guid>/tags/scrum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ios3</title>
+      <link>/tags/ios3/</link>
+      <pubDate>Tue, 10 Aug 2010 05:45:02 +0000</pubDate>
+      
+      <guid>/tags/ios3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ios4</title>
+      <link>/tags/ios4/</link>
+      <pubDate>Tue, 10 Aug 2010 05:45:02 +0000</pubDate>
+      
+      <guid>/tags/ios4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iphone</title>
+      <link>/tags/iphone/</link>
+      <pubDate>Tue, 10 Aug 2010 05:45:02 +0000</pubDate>
+      
+      <guid>/tags/iphone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xcode</title>
+      <link>/tags/xcode/</link>
+      <pubDate>Tue, 15 Jun 2010 05:44:36 +0000</pubDate>
+      
+      <guid>/tags/xcode/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

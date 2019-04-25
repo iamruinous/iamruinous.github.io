@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iphone on Jade Meskill</title>
+    <link>/tags/iphone/</link>
+    <description>Recent content in iphone on Jade Meskill</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Aug 2010 05:45:02 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/iphone/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>iTunes Connect: Invalid Binary</title>
+      <link>/2010/08/10/itunes-connect-invalid-binary/</link>
+      <pubDate>Tue, 10 Aug 2010 05:45:02 +0000</pubDate>
+      
+      <guid>/2010/08/10/itunes-connect-invalid-binary/</guid>
+      <description>Invalid Binary.
+Gee thanks Apple for that insightful, descriptive message. Surely with all your advanced binary scanning, static analysis, Application Uploader, etc. all you can give us is a most unhelpful &amp;#8220;Invalid Binary&amp;#8221;?
+If you are suffering from &amp;#8220;Invalid Binary&amp;#8221; issues, and have done everything short of sacrificing small farm animals, try this trick.
+If your Entitlements.plist file was generated with an version of Xcode prior Xcode 3.2.3, remove Entitlements.plist and regenerate it using Xcode 3.</description>
+    </item>
+    
+    <item>
+      <title>How To Build iPhone 3.0 and iOS4 Apps On The Same Machine</title>
+      <link>/2010/06/15/how-to-build-iphone-3-0-and-ios4-apps-on-the-same-machine/</link>
+      <pubDate>Tue, 15 Jun 2010 05:44:36 +0000</pubDate>
+      
+      <guid>/2010/06/15/how-to-build-iphone-3-0-and-ios4-apps-on-the-same-machine/</guid>
+      <description>It&amp;#8217;s actually really easy, here&amp;#8217;s how I&amp;#8217;ve set it up:
+Install the XCode 3.2.3 with iOS4 in /Developer
+Install XCode 3.2.2 with iPhone OS 3.2 in /Developer322
+Install latest XCode 4.0 developer preview in /DeveloperBeta
+This makes it trivially easy to support the older SDKs and toolsets for handling your legacy iPhone applications.</description>
+    </item>
+    
+  </channel>
+</rss>

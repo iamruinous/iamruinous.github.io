@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code on Jade Meskill</title>
+    <link>/categories/code/</link>
+    <description>Recent content in Code on Jade Meskill</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Jun 2015 17:31:22 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blue/Green Deploys with Kubernetes and Amazon ELB</title>
+      <link>/2015/06/13/bluegreen-deploys-with-kubernetes-and-amazon-elb/</link>
+      <pubDate>Sat, 13 Jun 2015 17:31:22 +0000</pubDate>
+      
+      <guid>/2015/06/13/bluegreen-deploys-with-kubernetes-and-amazon-elb/</guid>
+      <description>At Octoblu, we deploy very frequently and we&amp;#8217;re tired of our users seeing the occasional blip when a new version is put into production.
+Though we&amp;#8217;re using Amazon Opsworks to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts &amp;#8211; not a great experience.
+Enter Kubernetes. We knew that moving to an immutable infrastructure approach would help us deploy our apps, which range from extremely simple web services, to complex near-real-time messaging systems, quicker and easier.</description>
+    </item>
+    
+    <item>
+      <title>iTunes Connect: Invalid Binary</title>
+      <link>/2010/08/10/itunes-connect-invalid-binary/</link>
+      <pubDate>Tue, 10 Aug 2010 05:45:02 +0000</pubDate>
+      
+      <guid>/2010/08/10/itunes-connect-invalid-binary/</guid>
+      <description>Invalid Binary.
+Gee thanks Apple for that insightful, descriptive message. Surely with all your advanced binary scanning, static analysis, Application Uploader, etc. all you can give us is a most unhelpful &amp;#8220;Invalid Binary&amp;#8221;?
+If you are suffering from &amp;#8220;Invalid Binary&amp;#8221; issues, and have done everything short of sacrificing small farm animals, try this trick.
+If your Entitlements.plist file was generated with an version of Xcode prior Xcode 3.2.3, remove Entitlements.plist and regenerate it using Xcode 3.</description>
+    </item>
+    
+    <item>
+      <title>How To Build iPhone 3.0 and iOS4 Apps On The Same Machine</title>
+      <link>/2010/06/15/how-to-build-iphone-3-0-and-ios4-apps-on-the-same-machine/</link>
+      <pubDate>Tue, 15 Jun 2010 05:44:36 +0000</pubDate>
+      
+      <guid>/2010/06/15/how-to-build-iphone-3-0-and-ios4-apps-on-the-same-machine/</guid>
+      <description>It&amp;#8217;s actually really easy, here&amp;#8217;s how I&amp;#8217;ve set it up:
+Install the XCode 3.2.3 with iOS4 in /Developer
+Install XCode 3.2.2 with iPhone OS 3.2 in /Developer322
+Install latest XCode 4.0 developer preview in /DeveloperBeta
+This makes it trivially easy to support the older SDKs and toolsets for handling your legacy iPhone applications.</description>
+    </item>
+    
+    <item>
+      <title>A Brave New World</title>
+      <link>/2010/04/25/a-brave-new-world/</link>
+      <pubDate>Sun, 25 Apr 2010 19:09:42 +0000</pubDate>
+      
+      <guid>/2010/04/25/a-brave-new-world/</guid>
+      <description>No, not a [amazon ASIN=&amp;#8221;0060850523&amp;#8243;]dystopian novel about eugenics[/amazon], this is my re-attempt to commit to a blogging world.
+Hello all faithful followers (yes, Mom, I&amp;#8217;m talking to you). Today is a new day, a new dawn, a fresh start, what have you. I have decided that I need to make a new commitment to blogging. I need to force myself to practice and dramatically improve my writing and communication skills. I had previously maintained a blog over at http://iamruinous.</description>
+    </item>
+    
+  </channel>
+</rss>

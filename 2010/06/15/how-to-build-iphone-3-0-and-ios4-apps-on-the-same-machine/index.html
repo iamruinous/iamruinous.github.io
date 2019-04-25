@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>How To Build iPhone 3.0 and iOS4 Apps On The Same Machine :: Jade Meskill — Life. Faith. Code. Work. Play.</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="It&amp;#8217;s actually really easy, here&amp;#8217;s how I&amp;#8217;ve set it up:
+Install the XCode 3.2.3 with iOS4 in /Developer
+Install XCode 3.2.2 with iPhone OS 3.2 in /Developer322
+Install latest XCode 4.0 developer preview in /DeveloperBeta
+This makes it trivially easy to support the older SDKs and toolsets for handling your legacy iPhone applications."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/2010/06/15/how-to-build-iphone-3-0-and-ios4-apps-on-the-same-machine/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/blue.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="How To Build iPhone 3.0 and iOS4 Apps On The Same Machine :: Jade Meskill — Life. Faith. Code. Work. Play." />
+<meta name="twitter:description" content="It&amp;#8217;s actually really easy, here&amp;#8217;s how I&amp;#8217;ve set it up:
+Install the XCode 3.2.3 with iOS4 in /Developer
+Install XCode 3.2.2 with iPhone OS 3.2 in /Developer322
+Install latest XCode 4.0 developer preview in /DeveloperBeta
+This makes it trivially easy to support the older SDKs and toolsets for handling your legacy iPhone applications." />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="Jade Meskill" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How To Build iPhone 3.0 and iOS4 Apps On The Same Machine :: Jade Meskill — Life. Faith. Code. Work. Play.">
+<meta property="og:description" content="It&amp;#8217;s actually really easy, here&amp;#8217;s how I&amp;#8217;ve set it up:
+Install the XCode 3.2.3 with iOS4 in /Developer
+Install XCode 3.2.2 with iPhone OS 3.2 in /Developer322
+Install latest XCode 4.0 developer preview in /DeveloperBeta
+This makes it trivially easy to support the older SDKs and toolsets for handling your legacy iPhone applications." />
+<meta property="og:url" content="/2010/06/15/how-to-build-iphone-3-0-and-ios4-apps-on-the-same-machine/" />
+<meta property="og:site_name" content="How To Build iPhone 3.0 and iOS4 Apps On The Same Machine" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+<meta property="article:section" content="Code" /><meta property="article:section" content="Work" />
+<meta property="article:published_time" content="2010-06-15 05:44:36 &#43;0000 &#43;0000" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Jade Meskill
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/2010/06/15/how-to-build-iphone-3-0-and-ios4-apps-on-the-same-machine/">How To Build iPhone 3.0 and iOS4 Apps On The Same Machine</a></h1>
+  <div class="post-meta">
+    <span class="post-date">
+      2010-06-15
+    </span>
+    
+    <span class="post-author">::
+      Jade Meskill
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/ios4/">ios4</a>&nbsp;
+    
+    #<a href="/tags/iphone/">iphone</a>&nbsp;
+    
+    #<a href="/tags/xcode/">xcode</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>It&#8217;s actually really easy, here&#8217;s how I&#8217;ve set it up:</p>
+
+<p>Install the XCode 3.2.3 with iOS4 in /Developer</p>
+
+<p>Install XCode 3.2.2 with iPhone OS 3.2 in /Developer322</p>
+
+<p>Install latest XCode 4.0 developer preview in /DeveloperBeta</p>
+
+<p>This makes it trivially easy to support the older SDKs and toolsets for handling your legacy iPhone applications.</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/2010/08/10/itunes-connect-invalid-binary/">
+          <span class="button__icon">←</span>
+          <span class="button__text">iTunes Connect: Invalid Binary</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/2010/04/25/a-brave-new-world/">
+          <span class="button__text">A Brave New World</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2019 Powered by <a href="http://gohugo.io">Hugo</a></span>
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

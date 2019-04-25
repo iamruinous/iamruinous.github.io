@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Jade Meskill</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Jade Meskill</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Jun 2015 17:31:22 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Code</title>
+      <link>/categories/code/</link>
+      <pubDate>Sat, 13 Jun 2015 17:31:22 +0000</pubDate>
+      
+      <guid>/categories/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Work</title>
+      <link>/categories/work/</link>
+      <pubDate>Sat, 13 Jun 2015 17:31:22 +0000</pubDate>
+      
+      <guid>/categories/work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>/categories/life/</link>
+      <pubDate>Sat, 14 Sep 2013 04:52:50 +0000</pubDate>
+      
+      <guid>/categories/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Faith</title>
+      <link>/categories/faith/</link>
+      <pubDate>Sun, 25 Apr 2010 19:09:42 +0000</pubDate>
+      
+      <guid>/categories/faith/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Play</title>
+      <link>/categories/play/</link>
+      <pubDate>Sun, 25 Apr 2010 19:09:42 +0000</pubDate>
+      
+      <guid>/categories/play/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

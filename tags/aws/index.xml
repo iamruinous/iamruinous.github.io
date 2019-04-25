@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aws on Jade Meskill</title>
+    <link>/tags/aws/</link>
+    <description>Recent content in aws on Jade Meskill</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Jun 2015 17:31:22 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blue/Green Deploys with Kubernetes and Amazon ELB</title>
+      <link>/2015/06/13/bluegreen-deploys-with-kubernetes-and-amazon-elb/</link>
+      <pubDate>Sat, 13 Jun 2015 17:31:22 +0000</pubDate>
+      
+      <guid>/2015/06/13/bluegreen-deploys-with-kubernetes-and-amazon-elb/</guid>
+      <description>At Octoblu, we deploy very frequently and we&amp;#8217;re tired of our users seeing the occasional blip when a new version is put into production.
+Though we&amp;#8217;re using Amazon Opsworks to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts &amp;#8211; not a great experience.
+Enter Kubernetes. We knew that moving to an immutable infrastructure approach would help us deploy our apps, which range from extremely simple web services, to complex near-real-time messaging systems, quicker and easier.</description>
+    </item>
+    
+  </channel>
+</rss>
