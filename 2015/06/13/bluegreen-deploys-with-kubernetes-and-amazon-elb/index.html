@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   
-    <title>Blue/Green Deploys with Kubernetes and Amazon ELB :: Jade Meskill — Life. Faith. Code. Work. Play.</title>
+    <title>Blue/Green Deploys with Kubernetes and Amazon ELB :: Jade Meskill — Nerdy Stuff</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="At Octoblu, we deploy very frequently and we&amp;#8217;re tired of our users seeing the occasional blip when a new version is put into production.
-Though we&amp;#8217;re using Amazon Opsworks to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts &amp;#8211; not a great experience.
+<meta name="description" content="At Octoblu, we deploy very frequently and we’re tired of our users seeing the occasional blip when a new version is put into production.
+Though we’re using Amazon Opsworks to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts – not a great experience.
 Enter Kubernetes. We knew that moving to an immutable infrastructure approach would help us deploy our apps, which range from extremely simple web services, to complex near-real-time messaging systems, quicker and easier."/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
@@ -30,9 +30,9 @@ Enter Kubernetes. We knew that moving to an immutable infrastructure approach wo
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Blue/Green Deploys with Kubernetes and Amazon ELB :: Jade Meskill — Life. Faith. Code. Work. Play." />
-<meta name="twitter:description" content="At Octoblu, we deploy very frequently and we&amp;#8217;re tired of our users seeing the occasional blip when a new version is put into production.
-Though we&amp;#8217;re using Amazon Opsworks to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts &amp;#8211; not a great experience.
+<meta name="twitter:title" content="Blue/Green Deploys with Kubernetes and Amazon ELB :: Jade Meskill — Nerdy Stuff" />
+<meta name="twitter:description" content="At Octoblu, we deploy very frequently and we’re tired of our users seeing the occasional blip when a new version is put into production.
+Though we’re using Amazon Opsworks to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts – not a great experience.
 Enter Kubernetes. We knew that moving to an immutable infrastructure approach would help us deploy our apps, which range from extremely simple web services, to complex near-real-time messaging systems, quicker and easier." />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="Jade Meskill" />
@@ -41,9 +41,9 @@ Enter Kubernetes. We knew that moving to an immutable infrastructure approach wo
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Blue/Green Deploys with Kubernetes and Amazon ELB :: Jade Meskill — Life. Faith. Code. Work. Play.">
-<meta property="og:description" content="At Octoblu, we deploy very frequently and we&amp;#8217;re tired of our users seeing the occasional blip when a new version is put into production.
-Though we&amp;#8217;re using Amazon Opsworks to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts &amp;#8211; not a great experience.
+<meta property="og:title" content="Blue/Green Deploys with Kubernetes and Amazon ELB :: Jade Meskill — Nerdy Stuff">
+<meta property="og:description" content="At Octoblu, we deploy very frequently and we’re tired of our users seeing the occasional blip when a new version is put into production.
+Though we’re using Amazon Opsworks to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts – not a great experience.
 Enter Kubernetes. We knew that moving to an immutable infrastructure approach would help us deploy our apps, which range from extremely simple web services, to complex near-real-time messaging systems, quicker and easier." />
 <meta property="og:url" content="/2015/06/13/bluegreen-deploys-with-kubernetes-and-amazon-elb/" />
 <meta property="og:site_name" content="Blue/Green Deploys with Kubernetes and Amazon ELB" />
@@ -146,176 +146,151 @@ Enter Kubernetes. We knew that moving to an immutable infrastructure approach wo
   
 
   <div class="post-content">
-    
-
-<p>At <a href="https://www.octoblu.com">Octoblu</a>, we deploy very frequently and we&#8217;re tired of our users seeing the occasional blip when a new version is put into production.</p>
-
-<p>Though we&#8217;re using <a href="http://aws.amazon.com/opsworks/">Amazon Opsworks</a> to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts &#8211; not a great experience.</p>
-
+    <p>At <a href="https://www.octoblu.com">Octoblu</a>, we deploy very frequently and we’re tired of our users seeing the occasional blip when a new version is put into production.</p>
+<p>Though we’re using <a href="http://aws.amazon.com/opsworks/">Amazon Opsworks</a> to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts – not a great experience.</p>
 <h4 id="enter-kubernetes">Enter Kubernetes.</h4>
-
 <p>We knew that moving to an immutable infrastructure approach would help us deploy our apps, which range from extremely simple web services, to complex near-real-time messaging systems, quicker and easier.</p>
-
 <p>Containerization is the future of app deployment, but managing and scaling a bunch of <a href="https://www.docker.com">Docker</a> instances, managing all the port mappings, is not a simple proposition.</p>
-
 <p><a href="http://kubernetes.io">Kubernetes</a> simplified that part of our deployment strategy. However, we still had a problem, while Kubernetes is spinning up new versions of our docker instances, we could enter a state where old and new versions were in the mix. If we shut down the old before bringing up the new, we would also have a brief (sometimes not so brief) period of downtime.</p>
-
-<h4 id="blue-green-deploys">Blue/Green Deploys</h4>
-
-<p>I first read about Blue/Green deploys in Martin Fowler&#8217;s excellent article <a href="http://martinfowler.com/bliki/BlueGreenDeployment.html">BlueGreenDeployment</a>, a simple, but powerful concept. We started to build out a way to do this in Kubernetes. After some complicated attempts, we came up with a simple idea: use <a href="http://aws.amazon.com/elasticloadbalancing/">Amazon ELBs</a> as the router. Kubernetes handles the complexities of routing your request to the appropriate minion by listening to a given port on all minions, making ELB load balancing a piece of cake. Have the ELB listen on port 80 and 443, then route the request to the Kubernetes port on all minions.</p>
-
+<h4 id="bluegreen-deploys">Blue/Green Deploys</h4>
+<p>I first read about Blue/Green deploys in Martin Fowler’s excellent article <a href="http://martinfowler.com/bliki/BlueGreenDeployment.html">BlueGreenDeployment</a>, a simple, but powerful concept. We started to build out a way to do this in Kubernetes. After some complicated attempts, we came up with a simple idea: use <a href="http://aws.amazon.com/elasticloadbalancing/">Amazon ELBs</a> as the router. Kubernetes handles the complexities of routing your request to the appropriate minion by listening to a given port on all minions, making ELB load balancing a piece of cake. Have the ELB listen on port 80 and 443, then route the request to the Kubernetes port on all minions.</p>
 <h4 id="blue-or-green">Blue or Green?</h4>
-
 <p>The next problem was figuring out whether blue or green is currently active. Another simple idea, store a blue port and a green port as tags in the ELB and look at the current configuration of the ELB to see which one is currently live. No need to store the value somewhere that may not be accurate.</p>
-
 <h4 id="putting-it-all-together">Putting it all together.</h4>
-
 <p>We currently use a combination of <a href="http://travis-ci.org">Travis CI</a> and <a href="http://aws.amazon.com/codedeploy/">Amazon CodeDeploy</a> to kick off the blue/green deploy process.</p>
-
 <p>The following is part of a script that runs on our <a href="https://github.com/octoblu/triggers-service">Trigger Service</a> deploy. You can check out the code on GitHub if you want to see how it all works together.</p>
+<p>I’ve added some annotation to help explain what is happening.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  
+<span style="color:#75715e">#!/bin/bash</span>
 
-<p>I&#8217;ve added some annotation to help explain what is happening.</p>
+SCRIPT_DIR<span style="color:#f92672">=</span><span style="color:#ae81ff">\`</span>dirname $0<span style="color:#ae81ff">\`</span>
+  
+DISTRIBUTION<span style="color:#ae81ff">\_</span>DIR<span style="color:#f92672">=</span><span style="color:#ae81ff">\`</span>dirname $SCRIPT<span style="color:#ae81ff">\_</span>DIR<span style="color:#ae81ff">\`</span>
 
-<pre><code class="language-bash">  
-#!/bin/bash
+export PATH<span style="color:#f92672">=</span>/usr/local/bin:$PATH
+  
+export AWS<span style="color:#ae81ff">\_</span>DEFAULT<span style="color:#ae81ff">\_</span>REGION<span style="color:#f92672">=</span>us-west-2
 
-SCRIPT_DIR=\`dirname $0\`
+<span style="color:#ae81ff">\#</span> Query ELB to get the blue port label
   
-DISTRIBUTION\_DIR=\`dirname $SCRIPT\_DIR\`
+BLUE_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">\`</span>aws elb describe-tags &amp;<span style="color:#75715e">#8211;load-balancer-name triggers-octoblu-com | jq &#39;.TagDescriptions[0].Tags[] | select(.Key == &#34;blue&#34;) | .Value | tonumber&#39;\`</span>
 
-export PATH=/usr/local/bin:$PATH
+<span style="color:#ae81ff">\#</span> Query ELB to get the green port label
   
-export AWS\_DEFAULT\_REGION=us-west-2
+GREEN_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">\`</span>aws elb describe-tags &amp;<span style="color:#75715e">#8211;load-balancer-name triggers-octoblu-com | jq &#39;.TagDescriptions[0].Tags[] | select(.Key == &#34;green&#34;) | .Value | tonumber&#39;\`</span>
 
-\# Query ELB to get the blue port label
+<span style="color:#ae81ff">\#</span> Query ELB to figure out the current port
   
-BLUE_PORT=\`aws elb describe-tags &amp;#8211;load-balancer-name triggers-octoblu-com | jq '.TagDescriptions[0].Tags[] | select(.Key == &quot;blue&quot;) | .Value | tonumber'\`
+OLD_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">\`</span>aws elb describe-load-balancers &amp;<span style="color:#75715e">#8211;load-balancer-name triggers-octoblu-com | jq &#39;.LoadBalancerDescriptions[0].ListenerDescriptions[0].Listener.InstancePort&#39;\`</span>
 
-\# Query ELB to get the green port label
+<span style="color:#ae81ff">\#</span> figure out <span style="color:#66d9ef">if</span> the new color is blue or green
   
-GREEN_PORT=\`aws elb describe-tags &amp;#8211;load-balancer-name triggers-octoblu-com | jq '.TagDescriptions[0].Tags[] | select(.Key == &quot;green&quot;) | .Value | tonumber'\`
-
-\# Query ELB to figure out the current port
+NEW_COLOR<span style="color:#f92672">=</span>blue
   
-OLD_PORT=\`aws elb describe-load-balancers &amp;#8211;load-balancer-name triggers-octoblu-com | jq '.LoadBalancerDescriptions[0].ListenerDescriptions[0].Listener.InstancePort'\`
-
-\# figure out if the new color is blue or green
+NEW<span style="color:#ae81ff">\_</span>PORT<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>BLUE<span style="color:#ae81ff">\_</span>PORT<span style="color:#e6db74">}</span>
   
-NEW_COLOR=blue
-  
-NEW\_PORT=${BLUE\_PORT}
-  
-if [ &quot;${OLD\_PORT}&quot; == &quot;${BLUE\_PORT}&quot; ]; then
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>OLD<span style="color:#ae81ff">\_</span>PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>BLUE<span style="color:#ae81ff">\_</span>PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
     
-NEW_COLOR=green
+NEW_COLOR<span style="color:#f92672">=</span>green
     
-NEW\_PORT=${GREEN\_PORT}
+NEW<span style="color:#ae81ff">\_</span>PORT<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>GREEN<span style="color:#ae81ff">\_</span>PORT<span style="color:#e6db74">}</span>
   
-fi
+<span style="color:#66d9ef">fi</span>
 
-export BLUE\_PORT GREEN\_PORT OLD\_PORT NEW\_COLOR NEW_PORT
+export BLUE<span style="color:#ae81ff">\_</span>PORT GREEN<span style="color:#ae81ff">\_</span>PORT OLD<span style="color:#ae81ff">\_</span>PORT NEW<span style="color:#ae81ff">\_</span>COLOR NEW_PORT
 
-\# crazy template stuff, don't ask.
-  
-#
-  
-\# Some people, when confronted with a problem,
-  
-\# think &quot;I know, I'll use regular expressions.&quot;
-  
-\# Now they have two problems.
-  
-\# &amp;#8212; jwz
-  
-REPLACE\_REGEX='s;(\\*)(\$(\[a-zA-Z\_\]\[a-zA-Z\_0-9\]\*)|\$\{(\[a-zA-Z\_\]\[a-zA-Z_0-9\]\*)\})?;substr($1,0,int(length($1)/2)).($2&amp;&amp;length($1)%2?$2:$ENV{$3||$4});eg'
-  
-perl -pe $REPLACE\_REGEX $SCRIPT\_DIR/triggers-service-blue-service.yaml.tmpl &gt; $SCRIPT_DIR/triggers-service-blue-service.yaml
-  
-perl -pe $REPLACE\_REGEX $SCRIPT\_DIR/triggers-service-green-service.yaml.tmpl &gt; $SCRIPT_DIR/triggers-service-green-service.yaml
-
-\# Always create both services
-  
-kubectl delete -f $SCRIPT\_DIR/triggers-service-${NEW\_COLOR}-service.yaml
-  
-kubectl create -f $SCRIPT\_DIR/triggers-service-${NEW\_COLOR}-service.yaml
-
-\# destroy the old version of the new color
-  
-kubectl stop rc -lname=triggers-service-${NEW_COLOR}
-  
-kubectl delete rc -lname=triggers-service-${NEW_COLOR}
-  
-kubectl delete pods -lname=triggers-service-${NEW_COLOR}
-  
-kubectl create -f $SCRIPT\_DIR/triggers-service-${NEW\_COLOR}-controller.yaml
-
-\# wait for Kubernetes to bring up the instances properly
-  
-x=0
-  
-while [ &quot;$x&quot; -lt 20 -a -z &quot;$KUBE_STATUS&quot; ]; do
+<span style="color:#ae81ff">\#</span> crazy template stuff, don<span style="color:#e6db74">&#39;t ask.
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">#
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">\# Some people, when confronted with a problem,
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">\# think &#34;I know, I&#39;</span>ll use regular expressions.<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">\# Now they have two problems.
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">\# &amp;#8212; jwz
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">REPLACE\_REGEX=&#39;s;(\\*)(\$(\[a-zA-Z\_\]\[a-zA-Z\_0-9\]\*)|\$\{(\[a-zA-Z\_\]\[a-zA-Z_0-9\]\*)\})?;substr(</span>$1<span style="color:#e6db74">,0,int(length(</span>$1<span style="color:#e6db74">)/2)).(</span>$2<span style="color:#e6db74">&amp;&amp;length(</span>$1<span style="color:#e6db74">)%2?</span>$2<span style="color:#e6db74">:</span>$ENV<span style="color:#e6db74">{</span>$3<span style="color:#e6db74">||</span>$4<span style="color:#e6db74">});eg&#39;
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">perl -pe </span>$REPLACE<span style="color:#e6db74">\_REGEX </span>$SCRIPT<span style="color:#e6db74">\_DIR/triggers-service-blue-service.yaml.tmpl &gt; </span>$SCRIPT_DIR<span style="color:#e6db74">/triggers-service-blue-service.yaml
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">perl -pe </span>$REPLACE<span style="color:#e6db74">\_REGEX </span>$SCRIPT<span style="color:#e6db74">\_DIR/triggers-service-green-service.yaml.tmpl &gt; </span>$SCRIPT_DIR<span style="color:#e6db74">/triggers-service-green-service.yaml
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">\# Always create both services
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">kubectl delete -f </span>$SCRIPT<span style="color:#e6db74">\_DIR/triggers-service-</span><span style="color:#e6db74">${</span>NEW<span style="color:#ae81ff">\_</span>COLOR<span style="color:#e6db74">}</span><span style="color:#e6db74">-service.yaml
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">kubectl create -f </span>$SCRIPT<span style="color:#e6db74">\_DIR/triggers-service-</span><span style="color:#e6db74">${</span>NEW<span style="color:#ae81ff">\_</span>COLOR<span style="color:#e6db74">}</span><span style="color:#e6db74">-service.yaml
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">\# destroy the old version of the new color
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">kubectl stop rc -lname=triggers-service-</span><span style="color:#e6db74">${</span>NEW_COLOR<span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">kubectl delete rc -lname=triggers-service-</span><span style="color:#e6db74">${</span>NEW_COLOR<span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">kubectl delete pods -lname=triggers-service-</span><span style="color:#e6db74">${</span>NEW_COLOR<span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">kubectl create -f </span>$SCRIPT<span style="color:#e6db74">\_DIR/triggers-service-</span><span style="color:#e6db74">${</span>NEW<span style="color:#ae81ff">\_</span>COLOR<span style="color:#e6db74">}</span><span style="color:#e6db74">-controller.yaml
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">\# wait for Kubernetes to bring up the instances properly
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">x=0
+</span><span style="color:#e6db74">  
+</span><span style="color:#e6db74">while [ </span><span style="color:#e6db74">&#34;</span>$x<span style="color:#e6db74">&#34; -lt 20 -a -z &#34;</span>$KUBE_STATUS<span style="color:#e6db74">&#34;</span><span style="color:#e6db74"> ]; do
+</span><span style="color:#e6db74">     
+</span><span style="color:#e6db74">x=</span><span style="color:#66d9ef">$((</span>x+1<span style="color:#66d9ef">))</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">     
+</span><span style="color:#e6db74">sleep 10
+</span><span style="color:#e6db74">     
+</span><span style="color:#e6db74">echo </span><span style="color:#e6db74">&#34;</span>Checking kubectl status, attempt <span style="color:#e6db74">${</span>x<span style="color:#e6db74">}</span>&amp;<span style="color:#75715e">#8230;&#34;</span>
      
-x=$((x+1))
-     
-sleep 10
-     
-echo &quot;Checking kubectl status, attempt ${x}&amp;#8230;&quot;
-     
-KUBE\_STATUS=\`kubectl get pod -o json -lname=triggers-service-${NEW\_COLOR} | jq &quot;.items[].currentState.info[\&quot;triggers-service-${NEW_COLOR}\&quot;].ready&quot; | uniq | grep true\`
+KUBE<span style="color:#ae81ff">\_</span>STATUS<span style="color:#f92672">=</span><span style="color:#ae81ff">\`</span>kubectl get pod -o json -lname<span style="color:#f92672">=</span>triggers-service-<span style="color:#e6db74">${</span>NEW<span style="color:#ae81ff">\_</span>COLOR<span style="color:#e6db74">}</span> | jq <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">.items[].currentState.info[\&#34;triggers-service-</span><span style="color:#e6db74">${</span>NEW_COLOR<span style="color:#e6db74">}</span><span style="color:#e6db74">\&#34;].ready</span><span style="color:#e6db74">&#34;</span> | uniq | grep true<span style="color:#ae81ff">\`</span>
   
-done
+<span style="color:#66d9ef">done</span>
 
-if [ -z &quot;$KUBE_STATUS&quot; ]; then
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span>$KUBE_STATUS<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
     
-echo &quot;triggers-service-${NEW_COLOR} is not ready, giving up.&quot;
+echo <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">triggers-service-</span><span style="color:#e6db74">${</span>NEW_COLOR<span style="color:#e6db74">}</span><span style="color:#e6db74"> is not ready, giving up.</span><span style="color:#e6db74">&#34;</span>
     
-exit 1
+exit <span style="color:#ae81ff">1</span>
   
-fi
+<span style="color:#66d9ef">fi</span>
 
-\# remove the port mappings on the ELB
+<span style="color:#ae81ff">\#</span> remove the port mappings on the ELB
   
-aws elb delete-load-balancer-listeners &amp;#8211;load-balancer-name triggers-octoblu-com &amp;#8211;load-balancer-ports 80
+aws elb delete-load-balancer-listeners &amp;<span style="color:#75715e">#8211;load-balancer-name triggers-octoblu-com &amp;#8211;load-balancer-ports 80</span>
   
-aws elb delete-load-balancer-listeners &amp;#8211;load-balancer-name triggers-octoblu-com &amp;#8211;load-balancer-ports 443
+aws elb delete-load-balancer-listeners &amp;<span style="color:#75715e">#8211;load-balancer-name triggers-octoblu-com &amp;#8211;load-balancer-ports 443</span>
 
-\# create new port mappings
+<span style="color:#ae81ff">\#</span> create new port mappings
   
-aws elb create-load-balancer-listeners &amp;#8211;load-balancer-name triggers-octoblu-com &amp;#8211;listeners Protocol=HTTP,LoadBalancerPort=80,InstanceProtocol=HTTP,InstancePort=${NEW_PORT}
+aws elb create-load-balancer-listeners &amp;<span style="color:#75715e">#8211;load-balancer-name triggers-octoblu-com &amp;#8211;listeners Protocol=HTTP,LoadBalancerPort=80,InstanceProtocol=HTTP,InstancePort=${NEW_PORT}</span>
   
-aws elb create-load-balancer-listeners &amp;#8211;load-balancer-name triggers-octoblu-com &amp;#8211;listeners Protocol=HTTPS,LoadBalancerPort=443,InstanceProtocol=HTTP,InstancePort=${NEW_PORT},SSLCertificateId=arn:aws:iam::822069890720:server-certificate/startinter.octoblu.com
+aws elb create-load-balancer-listeners &amp;<span style="color:#75715e">#8211;load-balancer-name triggers-octoblu-com &amp;#8211;listeners Protocol=HTTPS,LoadBalancerPort=443,InstanceProtocol=HTTP,InstancePort=${NEW_PORT},SSLCertificateId=arn:aws:iam::822069890720:server-certificate/startinter.octoblu.com</span>
 
-\# reconfigure the health check
+<span style="color:#ae81ff">\#</span> reconfigure the health check
   
-aws elb configure-health-check &amp;#8211;load-balancer-name triggers-octoblu-com &amp;#8211;health-check Target=HTTP:${NEW_PORT}/healthcheck,Interval=30,Timeout=5,UnhealthyThreshold=2,HealthyThreshold=2
+aws elb configure-health-check &amp;<span style="color:#75715e">#8211;load-balancer-name triggers-octoblu-com &amp;#8211;health-check Target=HTTP:${NEW_PORT}/healthcheck,Interval=30,Timeout=5,UnhealthyThreshold=2,HealthyThreshold=2</span>
   
-</code></pre>
-
-<h4 id="oops-happens">Oops happens!</h4>
-
+</code></pre></div><h4 id="oops-happens">Oops happens!</h4>
 <p>Sometimes <a href="https://twitter.com/peterdemartini">Peter</a> makes a mistake. We have to quickly rollback to a prior version. If it is the off-cluster, rollback is as simple as re-mapping the ELB to forward to the old ports. Sometimes Peter tries to fix his mistake with a new deploy and now we have a real mess.</p>
-
 <p>Because this happened more than once, we created <a href="https://github.com/octoblu/oops">oops</a>. Oops allows us to instantly rollback to the off cluster, simply by executing <code>oops-rollback</code>, or quickly re-deploy a previous version <code>oops-deploy git-commit</code>.</p>
-
 <p>We add an <code>.oopsrc</code> to all our apps that looks something like this:</p>
-
-<pre><code class="language-json">  
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">  
 {
     
-&quot;elb-name&quot;: &quot;triggers-octoblu-com&quot;,
+<span style="color:#f92672">&#34;elb-name&#34;</span>: <span style="color:#e6db74">&#34;triggers-octoblu-com&#34;</span>,
     
-&quot;application-name&quot;: &quot;triggers-service&quot;,
+<span style="color:#f92672">&#34;application-name&#34;</span>: <span style="color:#e6db74">&#34;triggers-service&#34;</span>,
     
-&quot;deployment-group&quot;: &quot;master&quot;,
+<span style="color:#f92672">&#34;deployment-group&#34;</span>: <span style="color:#e6db74">&#34;master&#34;</span>,
     
-&quot;s3-bucket&quot;: &quot;octoblu-deploy&quot;
+<span style="color:#f92672">&#34;s3-bucket&#34;</span>: <span style="color:#e6db74">&#34;octoblu-deploy&#34;</span>
   
 }
   
-</code></pre>
-
-<p><code>oops list</code> will show us all available deployments.</p>
-
+</code></pre></div><p><code>oops list</code> will show us all available deployments.</p>
 <p>We are always looking for ways to get better results, if you have some suggestions, <a href="https://gitter.im/octoblu/help">let us know</a>.</p>
 
   </div>
@@ -358,7 +333,7 @@ aws elb configure-health-check &amp;#8211;load-balancer-name triggers-octoblu-co
   <div class="footer__inner">
     
       <div class="copyright">
-        <span>© 2019 Powered by <a href="http://gohugo.io">Hugo</a></span>
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
         <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
       </div>
     

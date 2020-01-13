@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jade Meskill</title>
@@ -38,7 +38,7 @@ I am eager to take on the CTO role again, especially given the incredibly ambiti
       
       <guid>/posts/2016-03-25-the-duh-framework/</guid>
       <description>I need to communicate better with my team. I created a framework to help myself. Introducing the DUH Framework. See the Github repo iamruinous/duh for the most up to date version.
-DUH Framework - Communicate Better, duh. Version 1.0.0
+ DUH Framework - Communicate Better, duh. Version 1.0.0
 I commit myself to using a simple, action-oriented, framework to better communicate with my team.
  Declare My Intent Update Regularly Have a Goal  During the process of doing work, what I am doing will change, and I will repeat the cycle.</description>
     </item>
@@ -49,8 +49,8 @@ I commit myself to using a simple, action-oriented, framework to better communic
       <pubDate>Sat, 13 Jun 2015 17:31:22 +0000</pubDate>
       
       <guid>/2015/06/13/bluegreen-deploys-with-kubernetes-and-amazon-elb/</guid>
-      <description>At Octoblu, we deploy very frequently and we&amp;#8217;re tired of our users seeing the occasional blip when a new version is put into production.
-Though we&amp;#8217;re using Amazon Opsworks to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts &amp;#8211; not a great experience.
+      <description>At Octoblu, we deploy very frequently and we’re tired of our users seeing the occasional blip when a new version is put into production.
+Though we’re using Amazon Opsworks to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts – not a great experience.
 Enter Kubernetes. We knew that moving to an immutable infrastructure approach would help us deploy our apps, which range from extremely simple web services, to complex near-real-time messaging systems, quicker and easier.</description>
     </item>
     
@@ -61,7 +61,7 @@ Enter Kubernetes. We knew that moving to an immutable infrastructure approach wo
       
       <guid>/2015/02/02/programming-philosophy/</guid>
       <description>A few months back I started an internal weekly mailing list at Octoblu sharing my views on Programming Philosophy. I want to share those ideas a little more broadly and get some new perspectives.
-Programming is a deeply creative and philosophical work, unfortunately we don&amp;#8217;t share our beliefs widely enough.
+Programming is a deeply creative and philosophical work, unfortunately we don’t share our beliefs widely enough.
 You can join the Facebook Group, or I just launched a newsletter that anyone can subscribe to. You can subscribe to Programming Philosophy, or check out the Programming Philosophy Archive.</description>
     </item>
     
@@ -71,7 +71,7 @@ You can join the Facebook Group, or I just launched a newsletter that anyone can
       <pubDate>Mon, 27 Jan 2014 15:25:24 +0000</pubDate>
       
       <guid>/2014/01/27/twenty-something-theses-of-autonomy/</guid>
-      <description>I believe in a radically different organization than what exists in the world today. In order to build the new economy (and thus a new world) our ideas of how an organization works must be challenged (&amp;#8220;You can&amp;#8217;t make an omelete [sic] without nuking the existing social order&amp;#8220;). A keystone of this &amp;#8220;new way&amp;#8221; is Autonomy. In order to get the best results, Freedom is essential. I have begun the process of capturing my theory in my &amp;#8220;Twenty-Something Theses of Autonomy.</description>
+      <description>I believe in a radically different organization than what exists in the world today. In order to build the new economy (and thus a new world) our ideas of how an organization works must be challenged (“You can’t make an omelete [sic] without nuking the existing social order“). A keystone of this “new way” is Autonomy. In order to get the best results, Freedom is essential. I have begun the process of capturing my theory in my “Twenty-Something Theses of Autonomy.</description>
     </item>
     
     <item>
@@ -91,7 +91,7 @@ You can join the Facebook Group, or I just launched a newsletter that anyone can
       <guid>/2013/09/12/hacking-the-future-of-humanity-at-tedxlivermore/</guid>
       <description>On June 8th, 2013 I spoke at TEDxLivermore about Hacking the Future of Humanity. The videos were recently published and now you can watch it for yourself.
   From the Youtube Video:
- Jade Meskill believes we have a choice: we can continue to condemn our children to a life of mediocrity through our apathy&amp;#8230;.or we can deliver them a future made of magnificence. Delving into the true hacker ethic, Jade poses the question: &amp;#8220;How do you hack the system to leave our kids a magnificent future?</description>
+ Jade Meskill believes we have a choice: we can continue to condemn our children to a life of mediocrity through our apathy….or we can deliver them a future made of magnificence. Delving into the true hacker ethic, Jade poses the question: “How do you hack the system to leave our kids a magnificent future?</description>
     </item>
     
     <item>
@@ -100,11 +100,11 @@ You can join the Facebook Group, or I just launched a newsletter that anyone can
       <pubDate>Wed, 26 Jun 2013 15:27:15 +0000</pubDate>
       
       <guid>/2013/06/26/is-anyone-opposed/</guid>
-      <description>Would anyone be opposed to &amp;#8230; ?
-Are you opposed to &amp;#8230; ?
+      <description>Would anyone be opposed to … ?
+  Are you opposed to … ?
  Or my personal favorite
- As long as no one is opposed &amp;#8230;
- I hear this question, under many different guises, throughout the day. I cringe every time I hear it, especially when it comes out of my own mouth. The question sets up a challenge: &amp;#8220;Do you dare prevent me from &amp;#8230; ?</description>
+ As long as no one is opposed …
+ I hear this question, under many different guises, throughout the day. I cringe every time I hear it, especially when it comes out of my own mouth. The question sets up a challenge: “Do you dare prevent me from … ?</description>
     </item>
     
     <item>
@@ -113,7 +113,7 @@ Are you opposed to &amp;#8230; ?
       <pubDate>Wed, 25 Apr 2012 01:32:01 +0000</pubDate>
       
       <guid>/2012/04/24/my-coaching-facilitation-toolkit/</guid>
-      <description>I was asked recently to document what&amp;#8217;s I use for my toolkit when I&amp;#8217;m at a client engagement. I&amp;#8217;ve experimented with many different options and materials over the last year and so I&amp;#8217;ll share with you what I&amp;#8217;m currently using.
+      <description>I was asked recently to document what’s I use for my toolkit when I’m at a client engagement. I’ve experimented with many different options and materials over the last year and so I’ll share with you what I’m currently using.
 Before I show you the list, I want to share my philosophy that your toolkit needs to be simple, yet flexible. You never know what might happen during the course of a meeting you are facilitating, therefore you need to be prepared for anything.</description>
     </item>
     
@@ -124,7 +124,7 @@ Before I show you the list, I want to share my philosophy that your toolkit need
       
       <guid>/2012/04/23/lunch-a-crucial-coaching-technique/</guid>
       <description>Make time to go to lunch with the people you are serving.
-I&amp;#8217;ve learned far more about the organization, the people I&amp;#8217;m working with, and the challenges that lie ahead by going to lunch with someone almost every single day I&amp;#8217;m on site.
+I’ve learned far more about the organization, the people I’m working with, and the challenges that lie ahead by going to lunch with someone almost every single day I’m on site.
 I believe that lunch is one of the least respected and valued times in American culture. It is a critical time of day to step back and release from the focus of our daily work.</description>
     </item>
     
@@ -144,7 +144,7 @@ In April 2011, I attended the Agile Game Incubator at Agile 2011 and utilized t
       <pubDate>Fri, 17 Jun 2011 03:37:37 +0000</pubDate>
       
       <guid>/2011/06/16/how-not-to-have-a-fierce-conversation/</guid>
-      <description>I have been reading the book [amazon ASIN=&amp;#8221;038552904X&amp;#8221;]Fierce Conversations[/amazon]. It has helped me to have a much more direct approach to difficult conversations, especially the ones that you really want to put off because they are so uncomfortable.
+      <description>I have been reading the book [amazon ASIN=”038552904X”]Fierce Conversations[/amazon]. It has helped me to have a much more direct approach to difficult conversations, especially the ones that you really want to put off because they are so uncomfortable.
 Recently at Integrum we have been undergoing a lot of deep, radical change, more about that in a later post. This has required me to have some very honest conversations with my entire team, much of it unpleasant.</description>
     </item>
     
@@ -154,7 +154,7 @@ Recently at Integrum we have been undergoing a lot of deep, radical change, more
       <pubDate>Wed, 24 Nov 2010 06:16:35 +0000</pubDate>
       
       <guid>/2010/11/24/why-i-became-a-certified-scrummaster/</guid>
-      <description>On November 22nd I officially became a Certified ScrumMaster (CSM). I went to my CSM training with Michael Vizdos. I was surprised at what I was able to learn, and the level of conversation was much higher than I had anticipated. To put things in context, we have been using Scrum at Integrum for over 4 years, we have had multiple other CSMs and a CSP on staff, so I figured that I&amp;#8217;d heard it all before.</description>
+      <description>On November 22nd I officially became a Certified ScrumMaster(CSM). I went to my CSM training with Michael Vizdos. I was surprised at what I was able to learn, and the level of conversation was much higher than I had anticipated. To put things in context, we have been using Scrum at Integrum for over 4 years, we have had multiple other CSMs and a CSP on staff, so I figured that I’d heard it all before.</description>
     </item>
     
     <item>
@@ -164,8 +164,8 @@ Recently at Integrum we have been undergoing a lot of deep, radical change, more
       
       <guid>/2010/08/10/itunes-connect-invalid-binary/</guid>
       <description>Invalid Binary.
-Gee thanks Apple for that insightful, descriptive message. Surely with all your advanced binary scanning, static analysis, Application Uploader, etc. all you can give us is a most unhelpful &amp;#8220;Invalid Binary&amp;#8221;?
-If you are suffering from &amp;#8220;Invalid Binary&amp;#8221; issues, and have done everything short of sacrificing small farm animals, try this trick.
+Gee thanks Apple for that insightful, descriptive message. Surely with all your advanced binary scanning, static analysis, Application Uploader, etc. all you can give us is a most unhelpful “Invalid Binary”?
+If you are suffering from “Invalid Binary” issues, and have done everything short of sacrificing small farm animals, try this trick.
 If your Entitlements.plist file was generated with an version of Xcode prior Xcode 3.2.3, remove Entitlements.plist and regenerate it using Xcode 3.</description>
     </item>
     
@@ -175,7 +175,7 @@ If your Entitlements.plist file was generated with an version of Xcode prior Xco
       <pubDate>Tue, 15 Jun 2010 05:44:36 +0000</pubDate>
       
       <guid>/2010/06/15/how-to-build-iphone-3-0-and-ios4-apps-on-the-same-machine/</guid>
-      <description>It&amp;#8217;s actually really easy, here&amp;#8217;s how I&amp;#8217;ve set it up:
+      <description>It’s actually really easy, here’s how I’ve set it up:
 Install the XCode 3.2.3 with iOS4 in /Developer
 Install XCode 3.2.2 with iPhone OS 3.2 in /Developer322
 Install latest XCode 4.0 developer preview in /DeveloperBeta
@@ -188,8 +188,8 @@ This makes it trivially easy to support the older SDKs and toolsets for handling
       <pubDate>Sun, 25 Apr 2010 19:09:42 +0000</pubDate>
       
       <guid>/2010/04/25/a-brave-new-world/</guid>
-      <description>No, not a [amazon ASIN=&amp;#8221;0060850523&amp;#8243;]dystopian novel about eugenics[/amazon], this is my re-attempt to commit to a blogging world.
-Hello all faithful followers (yes, Mom, I&amp;#8217;m talking to you). Today is a new day, a new dawn, a fresh start, what have you. I have decided that I need to make a new commitment to blogging. I need to force myself to practice and dramatically improve my writing and communication skills. I had previously maintained a blog over at http://iamruinous.</description>
+      <description>No, not a [amazon ASIN=”0060850523″]dystopian novel about eugenics[/amazon], this is my re-attempt to commit to a blogging world.
+Hello all faithful followers (yes, Mom, I’m talking to you). Today is a new day, a new dawn, a fresh start, what have you. I have decided that I need to make a new commitment to blogging. I need to force myself to practice and dramatically improve my writing and communication skills. I had previously maintained a blog over at http://iamruinous.</description>
     </item>
     
   </channel>

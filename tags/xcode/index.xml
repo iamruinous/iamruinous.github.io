@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>xcode on Jade Meskill</title>
@@ -17,7 +17,7 @@
       <pubDate>Tue, 15 Jun 2010 05:44:36 +0000</pubDate>
       
       <guid>/2010/06/15/how-to-build-iphone-3-0-and-ios4-apps-on-the-same-machine/</guid>
-      <description>It&amp;#8217;s actually really easy, here&amp;#8217;s how I&amp;#8217;ve set it up:
+      <description>It’s actually really easy, here’s how I’ve set it up:
 Install the XCode 3.2.3 with iOS4 in /Developer
 Install XCode 3.2.2 with iPhone OS 3.2 in /Developer322
 Install latest XCode 4.0 developer preview in /DeveloperBeta
