@@ -6,11 +6,7 @@
     <description>Recent content in Computes on Jade Meskill</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jan 2018 15:01:03 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/computes/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 02 Jan 2018 15:01:03 +0000</lastBuildDate><atom:link href="/tags/computes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>To Infinity and Beyond!</title>
       <link>/posts/2018-01-02_to-infinity-and-beyond/</link>
@@ -19,6 +15,13 @@
       <guid>/posts/2018-01-02_to-infinity-and-beyond/</guid>
       <description>I am happy to announce I am officially co-founder and CTO of Computes, inc. I couldn’t be more excited to work on another startup with my partners in crime: @ChrisMatthieu, Roy van de Water, and Peter DeMartini. We are out to change the world, again!
 I am eager to take on the CTO role again, especially given the incredibly ambitious dreams we have for Computes. Being at the intersection of emerging technologies and high-performing teams is where I love to be.</description>
+      <content>&lt;p&gt;&lt;img src=&#34;/posts/2018-01-02_to-infinity-and-beyond/images/1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I am happy to announce I am officially co-founder and CTO of &lt;a href=&#34;http://computes.com&#34;&gt;Computes, inc&lt;/a&gt;. I couldn’t be more excited to work on another startup with my partners in crime: &lt;a href=&#34;https://medium.com/u/112300c6c911&#34;&gt;@ChrisMatthieu&lt;/a&gt;, &lt;a href=&#34;https://medium.com/u/d49b901b66b4&#34;&gt;Roy van de Water,&lt;/a&gt; and &lt;a href=&#34;https://medium.com/u/19a5517db609&#34;&gt;Peter DeMartini&lt;/a&gt;. We are out to change the world, again!&lt;/p&gt;
+&lt;p&gt;I am eager to take on the CTO role again, especially given the incredibly ambitious dreams we have for Computes. Being at the intersection of emerging technologies and high-performing teams is where I love to be.### What is Computes?&lt;/p&gt;
+&lt;p&gt;Computes is a distributed, decentralized computing platform that uses idle CPU and GPU cycles to create a distributed mesh computer. Currently we are targeting private managed networks and can help you offload large batch or parallel processing for AI, machine learning, HPC, or other demanding workloads without needing to invest in additional infrastructure. Computes will scale with your existing infrastructure to offer infinite computing. Check out &lt;a href=&#34;http://computes.com&#34;&gt;computes.com&lt;/a&gt; for more information, or follow our journey at &lt;a href=&#34;http://blog.computes.com&#34;&gt;blog.computes.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ultimately Computes goes far beyond this use case, but when you are building something impossible, you gotta start somewhere!The work we did on &lt;a href=&#34;https://octoblu.github.io&#34;&gt;Meshblu and Octoblu&lt;/a&gt; was some of the most interesting and challenging engineering work of my career. After spending much of the previous 10 years focused on learning and teaching others how to form highly-effective creative teams, it was a wonderful experience to be part of a team that lived those values every day. We are taking the lessons learned building a high-performance machine-to-machine messaging platform processing billions of messages with modest hardware requirements and bringing that to the distributed web. I am so lucky to get to work with these talented people again and new technologies that will redefine the future of the Internet.&lt;/p&gt;
+&lt;p&gt;Here’s to a very exciting 2018!&lt;/p&gt;
+</content>
     </item>
     
   </channel>

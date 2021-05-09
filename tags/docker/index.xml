@@ -6,11 +6,7 @@
     <description>Recent content in docker on Jade Meskill</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jun 2015 17:31:22 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 13 Jun 2015 17:31:22 +0000</lastBuildDate><atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blue/Green Deploys with Kubernetes and Amazon ELB</title>
       <link>/2015/06/13/bluegreen-deploys-with-kubernetes-and-amazon-elb/</link>
@@ -20,6 +16,153 @@
       <description>At Octoblu, we deploy very frequently and we’re tired of our users seeing the occasional blip when a new version is put into production.
 Though we’re using Amazon Opsworks to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts – not a great experience.
 Enter Kubernetes. We knew that moving to an immutable infrastructure approach would help us deploy our apps, which range from extremely simple web services, to complex near-real-time messaging systems, quicker and easier.</description>
+      <content>&lt;p&gt;At &lt;a href=&#34;https://www.octoblu.com&#34;&gt;Octoblu&lt;/a&gt;, we deploy very frequently and we’re tired of our users seeing the occasional blip when a new version is put into production.&lt;/p&gt;
+&lt;p&gt;Though we’re using &lt;a href=&#34;http://aws.amazon.com/opsworks/&#34;&gt;Amazon Opsworks&lt;/a&gt; to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts – not a great experience.&lt;/p&gt;
+&lt;h4 id=&#34;enter-kubernetes&#34;&gt;Enter Kubernetes.&lt;/h4&gt;
+&lt;p&gt;We knew that moving to an immutable infrastructure approach would help us deploy our apps, which range from extremely simple web services, to complex near-real-time messaging systems, quicker and easier.&lt;/p&gt;
+&lt;p&gt;Containerization is the future of app deployment, but managing and scaling a bunch of &lt;a href=&#34;https://www.docker.com&#34;&gt;Docker&lt;/a&gt; instances, managing all the port mappings, is not a simple proposition.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://kubernetes.io&#34;&gt;Kubernetes&lt;/a&gt; simplified that part of our deployment strategy. However, we still had a problem, while Kubernetes is spinning up new versions of our docker instances, we could enter a state where old and new versions were in the mix. If we shut down the old before bringing up the new, we would also have a brief (sometimes not so brief) period of downtime.&lt;/p&gt;
+&lt;h4 id=&#34;bluegreen-deploys&#34;&gt;Blue/Green Deploys&lt;/h4&gt;
+&lt;p&gt;I first read about Blue/Green deploys in Martin Fowler’s excellent article &lt;a href=&#34;http://martinfowler.com/bliki/BlueGreenDeployment.html&#34;&gt;BlueGreenDeployment&lt;/a&gt;, a simple, but powerful concept. We started to build out a way to do this in Kubernetes. After some complicated attempts, we came up with a simple idea: use &lt;a href=&#34;http://aws.amazon.com/elasticloadbalancing/&#34;&gt;Amazon ELBs&lt;/a&gt; as the router. Kubernetes handles the complexities of routing your request to the appropriate minion by listening to a given port on all minions, making ELB load balancing a piece of cake. Have the ELB listen on port 80 and 443, then route the request to the Kubernetes port on all minions.&lt;/p&gt;
+&lt;h4 id=&#34;blue-or-green&#34;&gt;Blue or Green?&lt;/h4&gt;
+&lt;p&gt;The next problem was figuring out whether blue or green is currently active. Another simple idea, store a blue port and a green port as tags in the ELB and look at the current configuration of the ELB to see which one is currently live. No need to store the value somewhere that may not be accurate.&lt;/p&gt;
+&lt;h4 id=&#34;putting-it-all-together&#34;&gt;Putting it all together.&lt;/h4&gt;
+&lt;p&gt;We currently use a combination of &lt;a href=&#34;http://travis-ci.org&#34;&gt;Travis CI&lt;/a&gt; and &lt;a href=&#34;http://aws.amazon.com/codedeploy/&#34;&gt;Amazon CodeDeploy&lt;/a&gt; to kick off the blue/green deploy process.&lt;/p&gt;
+&lt;p&gt;The following is part of a script that runs on our &lt;a href=&#34;https://github.com/octoblu/triggers-service&#34;&gt;Trigger Service&lt;/a&gt; deploy. You can check out the code on GitHub if you want to see how it all works together.&lt;/p&gt;
+&lt;p&gt;I’ve added some annotation to help explain what is happening.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  
+&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&lt;/span&gt;
+
+SCRIPT_DIR&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;dirname $0&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;
+  
+DISTRIBUTION&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;DIR&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;dirname $SCRIPT&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;DIR&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;
+
+export PATH&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/usr/local/bin:$PATH
+  
+export AWS&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;DEFAULT&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;REGION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;us-west-2
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; Query ELB to get the blue port label
+  
+BLUE_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;aws elb describe-tags &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com | jq &amp;#39;.TagDescriptions[0].Tags[] | select(.Key == &amp;#34;blue&amp;#34;) | .Value | tonumber&amp;#39;\`&lt;/span&gt;
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; Query ELB to get the green port label
+  
+GREEN_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;aws elb describe-tags &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com | jq &amp;#39;.TagDescriptions[0].Tags[] | select(.Key == &amp;#34;green&amp;#34;) | .Value | tonumber&amp;#39;\`&lt;/span&gt;
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; Query ELB to figure out the current port
+  
+OLD_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;aws elb describe-load-balancers &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com | jq &amp;#39;.LoadBalancerDescriptions[0].ListenerDescriptions[0].Listener.InstancePort&amp;#39;\`&lt;/span&gt;
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; figure out &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; the new color is blue or green
+  
+NEW_COLOR&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;blue
+  
+NEW&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;BLUE&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;
+  
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;OLD&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;BLUE&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+    
+NEW_COLOR&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;green
+    
+NEW&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;GREEN&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;
+  
+&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+
+export BLUE&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT GREEN&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT OLD&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT NEW&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;COLOR NEW_PORT
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; crazy template stuff, don&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;t ask.
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;#
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\# Some people, when confronted with a problem,
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\# think &amp;#34;I know, I&amp;#39;&lt;/span&gt;ll use regular expressions.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\# Now they have two problems.
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\# &amp;amp;#8212; jwz
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;REPLACE\_REGEX=&amp;#39;s;(\\*)(\$(\[a-zA-Z\_\]\[a-zA-Z\_0-9\]\*)|\$\{(\[a-zA-Z\_\]\[a-zA-Z_0-9\]\*)\})?;substr(&lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt;,0,int(length(&lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt;)/2)).(&lt;/span&gt;$2&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;amp;&amp;amp;length(&lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt;)%2?&lt;/span&gt;$2&lt;span style=&#34;color:#e6db74&#34;&gt;:&lt;/span&gt;$ENV&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;$3&lt;span style=&#34;color:#e6db74&#34;&gt;||&lt;/span&gt;$4&lt;span style=&#34;color:#e6db74&#34;&gt;});eg&amp;#39;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;perl -pe &lt;/span&gt;$REPLACE&lt;span style=&#34;color:#e6db74&#34;&gt;\_REGEX &lt;/span&gt;$SCRIPT&lt;span style=&#34;color:#e6db74&#34;&gt;\_DIR/triggers-service-blue-service.yaml.tmpl &amp;gt; &lt;/span&gt;$SCRIPT_DIR&lt;span style=&#34;color:#e6db74&#34;&gt;/triggers-service-blue-service.yaml
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;perl -pe &lt;/span&gt;$REPLACE&lt;span style=&#34;color:#e6db74&#34;&gt;\_REGEX &lt;/span&gt;$SCRIPT&lt;span style=&#34;color:#e6db74&#34;&gt;\_DIR/triggers-service-green-service.yaml.tmpl &amp;gt; &lt;/span&gt;$SCRIPT_DIR&lt;span style=&#34;color:#e6db74&#34;&gt;/triggers-service-green-service.yaml
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\# Always create both services
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;kubectl delete -f &lt;/span&gt;$SCRIPT&lt;span style=&#34;color:#e6db74&#34;&gt;\_DIR/triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;-service.yaml
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;kubectl create -f &lt;/span&gt;$SCRIPT&lt;span style=&#34;color:#e6db74&#34;&gt;\_DIR/triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;-service.yaml
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\# destroy the old version of the new color
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;kubectl stop rc -lname=triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW_COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;kubectl delete rc -lname=triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW_COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;kubectl delete pods -lname=triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW_COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;kubectl create -f &lt;/span&gt;$SCRIPT&lt;span style=&#34;color:#e6db74&#34;&gt;\_DIR/triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;-controller.yaml
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\# wait for Kubernetes to bring up the instances properly
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;x=0
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;while [ &amp;#34;&lt;/span&gt;$x&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; -lt 20 -a -z &amp;#34;&lt;/span&gt;$KUBE_STATUS&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; ]; do
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;     
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;x=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$((&lt;/span&gt;x+1&lt;span style=&#34;color:#66d9ef&#34;&gt;))&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;     
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;sleep 10
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;     
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;echo &amp;#34;&lt;/span&gt;Checking kubectl status, attempt &lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;x&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8230;&amp;#34;&lt;/span&gt;
+     
+KUBE&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;STATUS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;kubectl get pod -o json -lname&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;triggers-service-&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt; | jq &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.items[].currentState.info[\&amp;#34;triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW_COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\&amp;#34;].ready&amp;#34;&lt;/span&gt; | uniq | grep true&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;
+  
+&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; -z &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$KUBE_STATUS&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+    
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW_COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; is not ready, giving up.&amp;#34;&lt;/span&gt;
+    
+exit &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+  
+&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; remove the port mappings on the ELB
+  
+aws elb delete-load-balancer-listeners &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com &amp;amp;#8211;load-balancer-ports 80&lt;/span&gt;
+  
+aws elb delete-load-balancer-listeners &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com &amp;amp;#8211;load-balancer-ports 443&lt;/span&gt;
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; create new port mappings
+  
+aws elb create-load-balancer-listeners &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com &amp;amp;#8211;listeners Protocol=HTTP,LoadBalancerPort=80,InstanceProtocol=HTTP,InstancePort=${NEW_PORT}&lt;/span&gt;
+  
+aws elb create-load-balancer-listeners &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com &amp;amp;#8211;listeners Protocol=HTTPS,LoadBalancerPort=443,InstanceProtocol=HTTP,InstancePort=${NEW_PORT},SSLCertificateId=arn:aws:iam::822069890720:server-certificate/startinter.octoblu.com&lt;/span&gt;
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; reconfigure the health check
+  
+aws elb configure-health-check &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com &amp;amp;#8211;health-check Target=HTTP:${NEW_PORT}/healthcheck,Interval=30,Timeout=5,UnhealthyThreshold=2,HealthyThreshold=2&lt;/span&gt;
+  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;oops-happens&#34;&gt;Oops happens!&lt;/h4&gt;
+&lt;p&gt;Sometimes &lt;a href=&#34;https://twitter.com/peterdemartini&#34;&gt;Peter&lt;/a&gt; makes a mistake. We have to quickly rollback to a prior version. If it is the off-cluster, rollback is as simple as re-mapping the ELB to forward to the old ports. Sometimes Peter tries to fix his mistake with a new deploy and now we have a real mess.&lt;/p&gt;
+&lt;p&gt;Because this happened more than once, we created &lt;a href=&#34;https://github.com/octoblu/oops&#34;&gt;oops&lt;/a&gt;. Oops allows us to instantly rollback to the off cluster, simply by executing &lt;code&gt;oops-rollback&lt;/code&gt;, or quickly re-deploy a previous version &lt;code&gt;oops-deploy git-commit&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We add an &lt;code&gt;.oopsrc&lt;/code&gt; to all our apps that looks something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;  
+{
+    
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;elb-name&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;triggers-octoblu-com&amp;#34;&lt;/span&gt;,
+    
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;application-name&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;triggers-service&amp;#34;&lt;/span&gt;,
+    
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;deployment-group&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;master&amp;#34;&lt;/span&gt;,
+    
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;s3-bucket&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;octoblu-deploy&amp;#34;&lt;/span&gt;
+  
+}
+  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;oops list&lt;/code&gt; will show us all available deployments.&lt;/p&gt;
+&lt;p&gt;We are always looking for ways to get better results, if you have some suggestions, &lt;a href=&#34;https://gitter.im/octoblu/help&#34;&gt;let us know&lt;/a&gt;.&lt;/p&gt;
+</content>
     </item>
     
   </channel>

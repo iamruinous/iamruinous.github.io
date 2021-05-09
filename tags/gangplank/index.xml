@@ -6,11 +6,7 @@
     <description>Recent content in Gangplank on Jade Meskill</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Sep 2013 04:52:50 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/gangplank/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 14 Sep 2013 04:52:50 +0000</lastBuildDate><atom:link href="/tags/gangplank/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gangplank on Arizona Horizon</title>
       <link>/2013/09/13/gangplank-on-arizona-horizon/</link>
@@ -18,6 +14,8 @@
       
       <guid>/2013/09/13/gangplank-on-arizona-horizon/</guid>
       <description>I appeared on Arizona Horizon on PBS on Wednesday. You can watch the video here.</description>
+      <content>&lt;p&gt;I appeared on Arizona Horizon on PBS on Wednesday. You can watch the video &lt;a href=&#34;http://www.azpbs.org/arizonahorizon/detailvid.php?id=14575&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
     </item>
     
   </channel>

@@ -6,11 +6,7 @@
     <description>Recent content in xcode on Jade Meskill</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Jun 2010 05:44:36 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 15 Jun 2010 05:44:36 +0000</lastBuildDate><atom:link href="/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How To Build iPhone 3.0 and iOS4 Apps On The Same Machine</title>
       <link>/2010/06/15/how-to-build-iphone-3-0-and-ios4-apps-on-the-same-machine/</link>
@@ -22,6 +18,12 @@ Install the XCode 3.2.3 with iOS4 in /Developer
 Install XCode 3.2.2 with iPhone OS 3.2 in /Developer322
 Install latest XCode 4.0 developer preview in /DeveloperBeta
 This makes it trivially easy to support the older SDKs and toolsets for handling your legacy iPhone applications.</description>
+      <content>&lt;p&gt;It’s actually really easy, here’s how I’ve set it up:&lt;/p&gt;
+&lt;p&gt;Install the XCode 3.2.3 with iOS4 in /Developer&lt;/p&gt;
+&lt;p&gt;Install XCode 3.2.2 with iPhone OS 3.2 in /Developer322&lt;/p&gt;
+&lt;p&gt;Install latest XCode 4.0 developer preview in /DeveloperBeta&lt;/p&gt;
+&lt;p&gt;This makes it trivially easy to support the older SDKs and toolsets for handling your legacy iPhone applications.&lt;/p&gt;
+</content>
     </item>
     
   </channel>

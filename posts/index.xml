@@ -6,11 +6,7 @@
     <description>Recent content in Posts on Jade Meskill</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jan 2018 15:01:03 +0000</lastBuildDate>
-    
-	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 02 Jan 2018 15:01:03 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>To Infinity and Beyond!</title>
       <link>/posts/2018-01-02_to-infinity-and-beyond/</link>
@@ -19,6 +15,13 @@
       <guid>/posts/2018-01-02_to-infinity-and-beyond/</guid>
       <description>I am happy to announce I am officially co-founder and CTO of Computes, inc. I couldn’t be more excited to work on another startup with my partners in crime: @ChrisMatthieu, Roy van de Water, and Peter DeMartini. We are out to change the world, again!
 I am eager to take on the CTO role again, especially given the incredibly ambitious dreams we have for Computes. Being at the intersection of emerging technologies and high-performing teams is where I love to be.</description>
+      <content>&lt;p&gt;&lt;img src=&#34;/posts/2018-01-02_to-infinity-and-beyond/images/1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I am happy to announce I am officially co-founder and CTO of &lt;a href=&#34;http://computes.com&#34;&gt;Computes, inc&lt;/a&gt;. I couldn’t be more excited to work on another startup with my partners in crime: &lt;a href=&#34;https://medium.com/u/112300c6c911&#34;&gt;@ChrisMatthieu&lt;/a&gt;, &lt;a href=&#34;https://medium.com/u/d49b901b66b4&#34;&gt;Roy van de Water,&lt;/a&gt; and &lt;a href=&#34;https://medium.com/u/19a5517db609&#34;&gt;Peter DeMartini&lt;/a&gt;. We are out to change the world, again!&lt;/p&gt;
+&lt;p&gt;I am eager to take on the CTO role again, especially given the incredibly ambitious dreams we have for Computes. Being at the intersection of emerging technologies and high-performing teams is where I love to be.### What is Computes?&lt;/p&gt;
+&lt;p&gt;Computes is a distributed, decentralized computing platform that uses idle CPU and GPU cycles to create a distributed mesh computer. Currently we are targeting private managed networks and can help you offload large batch or parallel processing for AI, machine learning, HPC, or other demanding workloads without needing to invest in additional infrastructure. Computes will scale with your existing infrastructure to offer infinite computing. Check out &lt;a href=&#34;http://computes.com&#34;&gt;computes.com&lt;/a&gt; for more information, or follow our journey at &lt;a href=&#34;http://blog.computes.com&#34;&gt;blog.computes.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ultimately Computes goes far beyond this use case, but when you are building something impossible, you gotta start somewhere!The work we did on &lt;a href=&#34;https://octoblu.github.io&#34;&gt;Meshblu and Octoblu&lt;/a&gt; was some of the most interesting and challenging engineering work of my career. After spending much of the previous 10 years focused on learning and teaching others how to form highly-effective creative teams, it was a wonderful experience to be part of a team that lived those values every day. We are taking the lessons learned building a high-performance machine-to-machine messaging platform processing billions of messages with modest hardware requirements and bringing that to the distributed web. I am so lucky to get to work with these talented people again and new technologies that will redefine the future of the Internet.&lt;/p&gt;
+&lt;p&gt;Here’s to a very exciting 2018!&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -31,6 +34,27 @@ I am eager to take on the CTO role again, especially given the incredibly ambiti
  DUH Framework - Communicate Better, duh. Version 1.0.0
 I commit myself to using a simple, action-oriented, framework to better communicate with my team.
  Declare My Intent Update Regularly Have a Goal  During the process of doing work, what I am doing will change, and I will repeat the cycle.</description>
+      <content>&lt;p&gt;I need to communicate better with my team. I created a framework to help myself. Introducing the DUH Framework. See the Github repo &lt;a href=&#34;https://github.com/iamruinous/duh&#34;&gt;iamruinous/duh&lt;/a&gt; for the most up to date version.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;duh-framework---communicate-better-duh&#34;&gt;DUH Framework - Communicate Better, duh.&lt;/h1&gt;
+&lt;p&gt;Version 1.0.0&lt;/p&gt;
+&lt;p&gt;I commit myself to using a simple, action-oriented, framework to better communicate with my team.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#declare-my-intent&#34;&gt;Declare My Intent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#update-regularly&#34;&gt;Update Regularly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#have-a-goal&#34;&gt;Have a Goal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;During the process of &lt;em&gt;doing work&lt;/em&gt;, what I am doing will change, and I will repeat the cycle.&lt;/p&gt;
+&lt;h2 id=&#34;declare-my-intent&#34;&gt;Declare My Intent&lt;/h2&gt;
+&lt;p&gt;Variability in schedules is challenging for me and my team to understand the current state of work.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Action&lt;/strong&gt;: Every time I take on work, I will declare my intent to work on it for my team to see.&lt;/p&gt;
+&lt;h2 id=&#34;update-regularly&#34;&gt;Update Regularly&lt;/h2&gt;
+&lt;p&gt;Forgetting to communicate openly and frequently when working on a project I am passionate about can be dangerous. It is also difficult to remember to ask for help.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Action&lt;/strong&gt;: I will update my team on my progress at least one per day, preferably more frequently.&lt;/p&gt;
+&lt;h2 id=&#34;have-a-goal&#34;&gt;Have A Goal&lt;/h2&gt;
+&lt;p&gt;It is easy to get sidetracked if the goal is unclear. It is also hard to get support from the rest of the team if they don&amp;rsquo;t understand my goal. I have master plans in my head that only the people I have spoken with may (or may not) know about. I am also not allowing input and feedback to improve my ideas.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Action&lt;/strong&gt;: Update the roadmap of the project with my desired end-state before starting the work. As part of &lt;a href=&#34;#declare-my-intent&#34;&gt;Declare My Intent&lt;/a&gt;, I will re-state the goal to my team to remind myself why I am doing the work and where I want to end up.&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -42,6 +66,153 @@ I commit myself to using a simple, action-oriented, framework to better communic
       <description>At Octoblu, we deploy very frequently and we’re tired of our users seeing the occasional blip when a new version is put into production.
 Though we’re using Amazon Opsworks to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts – not a great experience.
 Enter Kubernetes. We knew that moving to an immutable infrastructure approach would help us deploy our apps, which range from extremely simple web services, to complex near-real-time messaging systems, quicker and easier.</description>
+      <content>&lt;p&gt;At &lt;a href=&#34;https://www.octoblu.com&#34;&gt;Octoblu&lt;/a&gt;, we deploy very frequently and we’re tired of our users seeing the occasional blip when a new version is put into production.&lt;/p&gt;
+&lt;p&gt;Though we’re using &lt;a href=&#34;http://aws.amazon.com/opsworks/&#34;&gt;Amazon Opsworks&lt;/a&gt; to more easily manage our infrastructure, our updates can take a while for dependencies to be installed before the service restarts – not a great experience.&lt;/p&gt;
+&lt;h4 id=&#34;enter-kubernetes&#34;&gt;Enter Kubernetes.&lt;/h4&gt;
+&lt;p&gt;We knew that moving to an immutable infrastructure approach would help us deploy our apps, which range from extremely simple web services, to complex near-real-time messaging systems, quicker and easier.&lt;/p&gt;
+&lt;p&gt;Containerization is the future of app deployment, but managing and scaling a bunch of &lt;a href=&#34;https://www.docker.com&#34;&gt;Docker&lt;/a&gt; instances, managing all the port mappings, is not a simple proposition.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://kubernetes.io&#34;&gt;Kubernetes&lt;/a&gt; simplified that part of our deployment strategy. However, we still had a problem, while Kubernetes is spinning up new versions of our docker instances, we could enter a state where old and new versions were in the mix. If we shut down the old before bringing up the new, we would also have a brief (sometimes not so brief) period of downtime.&lt;/p&gt;
+&lt;h4 id=&#34;bluegreen-deploys&#34;&gt;Blue/Green Deploys&lt;/h4&gt;
+&lt;p&gt;I first read about Blue/Green deploys in Martin Fowler’s excellent article &lt;a href=&#34;http://martinfowler.com/bliki/BlueGreenDeployment.html&#34;&gt;BlueGreenDeployment&lt;/a&gt;, a simple, but powerful concept. We started to build out a way to do this in Kubernetes. After some complicated attempts, we came up with a simple idea: use &lt;a href=&#34;http://aws.amazon.com/elasticloadbalancing/&#34;&gt;Amazon ELBs&lt;/a&gt; as the router. Kubernetes handles the complexities of routing your request to the appropriate minion by listening to a given port on all minions, making ELB load balancing a piece of cake. Have the ELB listen on port 80 and 443, then route the request to the Kubernetes port on all minions.&lt;/p&gt;
+&lt;h4 id=&#34;blue-or-green&#34;&gt;Blue or Green?&lt;/h4&gt;
+&lt;p&gt;The next problem was figuring out whether blue or green is currently active. Another simple idea, store a blue port and a green port as tags in the ELB and look at the current configuration of the ELB to see which one is currently live. No need to store the value somewhere that may not be accurate.&lt;/p&gt;
+&lt;h4 id=&#34;putting-it-all-together&#34;&gt;Putting it all together.&lt;/h4&gt;
+&lt;p&gt;We currently use a combination of &lt;a href=&#34;http://travis-ci.org&#34;&gt;Travis CI&lt;/a&gt; and &lt;a href=&#34;http://aws.amazon.com/codedeploy/&#34;&gt;Amazon CodeDeploy&lt;/a&gt; to kick off the blue/green deploy process.&lt;/p&gt;
+&lt;p&gt;The following is part of a script that runs on our &lt;a href=&#34;https://github.com/octoblu/triggers-service&#34;&gt;Trigger Service&lt;/a&gt; deploy. You can check out the code on GitHub if you want to see how it all works together.&lt;/p&gt;
+&lt;p&gt;I’ve added some annotation to help explain what is happening.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  
+&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&lt;/span&gt;
+
+SCRIPT_DIR&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;dirname $0&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;
+  
+DISTRIBUTION&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;DIR&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;dirname $SCRIPT&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;DIR&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;
+
+export PATH&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/usr/local/bin:$PATH
+  
+export AWS&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;DEFAULT&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;REGION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;us-west-2
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; Query ELB to get the blue port label
+  
+BLUE_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;aws elb describe-tags &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com | jq &amp;#39;.TagDescriptions[0].Tags[] | select(.Key == &amp;#34;blue&amp;#34;) | .Value | tonumber&amp;#39;\`&lt;/span&gt;
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; Query ELB to get the green port label
+  
+GREEN_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;aws elb describe-tags &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com | jq &amp;#39;.TagDescriptions[0].Tags[] | select(.Key == &amp;#34;green&amp;#34;) | .Value | tonumber&amp;#39;\`&lt;/span&gt;
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; Query ELB to figure out the current port
+  
+OLD_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;aws elb describe-load-balancers &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com | jq &amp;#39;.LoadBalancerDescriptions[0].ListenerDescriptions[0].Listener.InstancePort&amp;#39;\`&lt;/span&gt;
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; figure out &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; the new color is blue or green
+  
+NEW_COLOR&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;blue
+  
+NEW&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;BLUE&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;
+  
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;OLD&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;BLUE&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+    
+NEW_COLOR&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;green
+    
+NEW&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;GREEN&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;
+  
+&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+
+export BLUE&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT GREEN&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT OLD&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;PORT NEW&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;COLOR NEW_PORT
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; crazy template stuff, don&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;t ask.
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;#
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\# Some people, when confronted with a problem,
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\# think &amp;#34;I know, I&amp;#39;&lt;/span&gt;ll use regular expressions.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\# Now they have two problems.
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\# &amp;amp;#8212; jwz
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;REPLACE\_REGEX=&amp;#39;s;(\\*)(\$(\[a-zA-Z\_\]\[a-zA-Z\_0-9\]\*)|\$\{(\[a-zA-Z\_\]\[a-zA-Z_0-9\]\*)\})?;substr(&lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt;,0,int(length(&lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt;)/2)).(&lt;/span&gt;$2&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;amp;&amp;amp;length(&lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt;)%2?&lt;/span&gt;$2&lt;span style=&#34;color:#e6db74&#34;&gt;:&lt;/span&gt;$ENV&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;$3&lt;span style=&#34;color:#e6db74&#34;&gt;||&lt;/span&gt;$4&lt;span style=&#34;color:#e6db74&#34;&gt;});eg&amp;#39;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;perl -pe &lt;/span&gt;$REPLACE&lt;span style=&#34;color:#e6db74&#34;&gt;\_REGEX &lt;/span&gt;$SCRIPT&lt;span style=&#34;color:#e6db74&#34;&gt;\_DIR/triggers-service-blue-service.yaml.tmpl &amp;gt; &lt;/span&gt;$SCRIPT_DIR&lt;span style=&#34;color:#e6db74&#34;&gt;/triggers-service-blue-service.yaml
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;perl -pe &lt;/span&gt;$REPLACE&lt;span style=&#34;color:#e6db74&#34;&gt;\_REGEX &lt;/span&gt;$SCRIPT&lt;span style=&#34;color:#e6db74&#34;&gt;\_DIR/triggers-service-green-service.yaml.tmpl &amp;gt; &lt;/span&gt;$SCRIPT_DIR&lt;span style=&#34;color:#e6db74&#34;&gt;/triggers-service-green-service.yaml
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\# Always create both services
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;kubectl delete -f &lt;/span&gt;$SCRIPT&lt;span style=&#34;color:#e6db74&#34;&gt;\_DIR/triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;-service.yaml
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;kubectl create -f &lt;/span&gt;$SCRIPT&lt;span style=&#34;color:#e6db74&#34;&gt;\_DIR/triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;-service.yaml
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\# destroy the old version of the new color
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;kubectl stop rc -lname=triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW_COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;kubectl delete rc -lname=triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW_COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;kubectl delete pods -lname=triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW_COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;kubectl create -f &lt;/span&gt;$SCRIPT&lt;span style=&#34;color:#e6db74&#34;&gt;\_DIR/triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;-controller.yaml
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\# wait for Kubernetes to bring up the instances properly
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;x=0
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;while [ &amp;#34;&lt;/span&gt;$x&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; -lt 20 -a -z &amp;#34;&lt;/span&gt;$KUBE_STATUS&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; ]; do
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;     
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;x=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$((&lt;/span&gt;x+1&lt;span style=&#34;color:#66d9ef&#34;&gt;))&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;     
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;sleep 10
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;     
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;echo &amp;#34;&lt;/span&gt;Checking kubectl status, attempt &lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;x&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8230;&amp;#34;&lt;/span&gt;
+     
+KUBE&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;STATUS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;kubectl get pod -o json -lname&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;triggers-service-&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW&lt;span style=&#34;color:#ae81ff&#34;&gt;\_&lt;/span&gt;COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt; | jq &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.items[].currentState.info[\&amp;#34;triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW_COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;\&amp;#34;].ready&amp;#34;&lt;/span&gt; | uniq | grep true&lt;span style=&#34;color:#ae81ff&#34;&gt;\`&lt;/span&gt;
+  
+&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; -z &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$KUBE_STATUS&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+    
+echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;triggers-service-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;NEW_COLOR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; is not ready, giving up.&amp;#34;&lt;/span&gt;
+    
+exit &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+  
+&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; remove the port mappings on the ELB
+  
+aws elb delete-load-balancer-listeners &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com &amp;amp;#8211;load-balancer-ports 80&lt;/span&gt;
+  
+aws elb delete-load-balancer-listeners &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com &amp;amp;#8211;load-balancer-ports 443&lt;/span&gt;
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; create new port mappings
+  
+aws elb create-load-balancer-listeners &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com &amp;amp;#8211;listeners Protocol=HTTP,LoadBalancerPort=80,InstanceProtocol=HTTP,InstancePort=${NEW_PORT}&lt;/span&gt;
+  
+aws elb create-load-balancer-listeners &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com &amp;amp;#8211;listeners Protocol=HTTPS,LoadBalancerPort=443,InstanceProtocol=HTTP,InstancePort=${NEW_PORT},SSLCertificateId=arn:aws:iam::822069890720:server-certificate/startinter.octoblu.com&lt;/span&gt;
+
+&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; reconfigure the health check
+  
+aws elb configure-health-check &amp;amp;&lt;span style=&#34;color:#75715e&#34;&gt;#8211;load-balancer-name triggers-octoblu-com &amp;amp;#8211;health-check Target=HTTP:${NEW_PORT}/healthcheck,Interval=30,Timeout=5,UnhealthyThreshold=2,HealthyThreshold=2&lt;/span&gt;
+  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;oops-happens&#34;&gt;Oops happens!&lt;/h4&gt;
+&lt;p&gt;Sometimes &lt;a href=&#34;https://twitter.com/peterdemartini&#34;&gt;Peter&lt;/a&gt; makes a mistake. We have to quickly rollback to a prior version. If it is the off-cluster, rollback is as simple as re-mapping the ELB to forward to the old ports. Sometimes Peter tries to fix his mistake with a new deploy and now we have a real mess.&lt;/p&gt;
+&lt;p&gt;Because this happened more than once, we created &lt;a href=&#34;https://github.com/octoblu/oops&#34;&gt;oops&lt;/a&gt;. Oops allows us to instantly rollback to the off cluster, simply by executing &lt;code&gt;oops-rollback&lt;/code&gt;, or quickly re-deploy a previous version &lt;code&gt;oops-deploy git-commit&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We add an &lt;code&gt;.oopsrc&lt;/code&gt; to all our apps that looks something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;  
+{
+    
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;elb-name&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;triggers-octoblu-com&amp;#34;&lt;/span&gt;,
+    
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;application-name&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;triggers-service&amp;#34;&lt;/span&gt;,
+    
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;deployment-group&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;master&amp;#34;&lt;/span&gt;,
+    
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;s3-bucket&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;octoblu-deploy&amp;#34;&lt;/span&gt;
+  
+}
+  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;oops list&lt;/code&gt; will show us all available deployments.&lt;/p&gt;
+&lt;p&gt;We are always looking for ways to get better results, if you have some suggestions, &lt;a href=&#34;https://gitter.im/octoblu/help&#34;&gt;let us know&lt;/a&gt;.&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -53,6 +224,10 @@ Enter Kubernetes. We knew that moving to an immutable infrastructure approach wo
       <description>A few months back I started an internal weekly mailing list at Octoblu sharing my views on Programming Philosophy. I want to share those ideas a little more broadly and get some new perspectives.
 Programming is a deeply creative and philosophical work, unfortunately we don’t share our beliefs widely enough.
 You can join the Facebook Group, or I just launched a newsletter that anyone can subscribe to. You can subscribe to Programming Philosophy, or check out the Programming Philosophy Archive.</description>
+      <content>&lt;p&gt;A few months back I started an internal weekly mailing list at Octoblu sharing my views on Programming Philosophy. I want to share those ideas a little more broadly and get some new perspectives.&lt;/p&gt;
+&lt;p&gt;Programming is a deeply creative and philosophical work, unfortunately we don’t share our beliefs widely enough.&lt;/p&gt;
+&lt;p&gt;You can join the &lt;a href=&#34;https://www.facebook.com/groups/programming.philosophy/&#34;&gt;Facebook Group&lt;/a&gt;, or I just launched a newsletter that anyone can subscribe to. You can &lt;a href=&#34;https://tinyletter.com/programmingphilosophy&#34;&gt;subscribe to Programming Philosophy&lt;/a&gt;, or check out the &lt;a href=&#34;http://tinyletter.com/programmingphilosophy/archive&#34;&gt;Programming Philosophy Archive&lt;/a&gt;.&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -62,6 +237,39 @@ You can join the Facebook Group, or I just launched a newsletter that anyone can
       
       <guid>/2014/01/27/twenty-something-theses-of-autonomy/</guid>
       <description>I believe in a radically different organization than what exists in the world today. In order to build the new economy (and thus a new world) our ideas of how an organization works must be challenged (“You can’t make an omelete [sic] without nuking the existing social order“). A keystone of this “new way” is Autonomy. In order to get the best results, Freedom is essential. I have begun the process of capturing my theory in my “Twenty-Something Theses of Autonomy.</description>
+      <content>&lt;p&gt;I believe in a radically different organization than what exists in the world today. In order to build the new economy (and thus a new world) our ideas of how an organization works must be challenged (“&lt;a href=&#34;http://www.cluetrain.com/passages.html#hyperlinked&#34;&gt;You can’t make an omelete [sic] without nuking the existing social order&lt;/a&gt;“). A keystone of this “new way” is Autonomy. In order to get the best results, Freedom is essential. I have begun the process of capturing my theory in my “Twenty-Something Theses of Autonomy.” This list will evolve as I expand on each of these Theses, however, I want to begin the improvement process now by starting a discussion.&lt;/p&gt;
+&lt;p&gt;Do you see anything obvious missing? What has your experience taught you? Let’s talk.&lt;/p&gt;
+&lt;h2 id=&#34;twenty-something-theses-of-autonomy&#34;&gt;Twenty-Something Theses of Autonomy&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Customer Delight Cannot Exceed Worker Delight&lt;/li&gt;
+&lt;li&gt;Fully Engaged + Fully Present = Fully Human&lt;/li&gt;
+&lt;li&gt;Humans Own Outcomes&lt;/li&gt;
+&lt;li&gt;Creativity Seeks Free Spirits&lt;/li&gt;
+&lt;li&gt;Nonlinear Innovation Needs Creativity&lt;/li&gt;
+&lt;li&gt;Innovation Breeds Failure Breeds Innovation&lt;/li&gt;
+&lt;li&gt;Community Improves Results (and Expedites Failure)&lt;/li&gt;
+&lt;li&gt;Fear is the Org Killer&lt;/li&gt;
+&lt;li&gt;Telling Triples Turnover&lt;/li&gt;
+&lt;li&gt;Demanding Delivers Dummies&lt;/li&gt;
+&lt;li&gt;Teams Solve Difficult Problems&lt;/li&gt;
+&lt;li&gt;Autonomy Trumps Hegemony&lt;/li&gt;
+&lt;li&gt;Ivory Towers Are For Wizards (and Look Where That Got Saruman)&lt;/li&gt;
+&lt;li&gt;Only Gamblers Pick Winners&lt;/li&gt;
+&lt;li&gt;Diversity Wins&lt;/li&gt;
+&lt;li&gt;The Best Ideas are at the Market&lt;/li&gt;
+&lt;li&gt;Heterogenous Systems Increase Effectiveness (over time)&lt;/li&gt;
+&lt;li&gt;Simple is Better&lt;/li&gt;
+&lt;li&gt;Maximize Laziness&lt;/li&gt;
+&lt;li&gt;Effort is Expensive&lt;/li&gt;
+&lt;li&gt;Results &amp;gt; Effort&lt;/li&gt;
+&lt;li&gt;Only Results Matter&lt;/li&gt;
+&lt;li&gt;Adults Come to Work&lt;/li&gt;
+&lt;li&gt;Team = Product&lt;/li&gt;
+&lt;li&gt;(Team + Product)^n = Organization&lt;/li&gt;
+&lt;li&gt;Leaders Don’t Manage&lt;/li&gt;
+&lt;li&gt;Results Cover a Multitude of Sins&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     </item>
     
     <item>
@@ -71,6 +279,8 @@ You can join the Facebook Group, or I just launched a newsletter that anyone can
       
       <guid>/2013/09/13/gangplank-on-arizona-horizon/</guid>
       <description>I appeared on Arizona Horizon on PBS on Wednesday. You can watch the video here.</description>
+      <content>&lt;p&gt;I appeared on Arizona Horizon on PBS on Wednesday. You can watch the video &lt;a href=&#34;http://www.azpbs.org/arizonahorizon/detailvid.php?id=14575&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -82,6 +292,22 @@ You can join the Facebook Group, or I just launched a newsletter that anyone can
       <description>On June 8th, 2013 I spoke at TEDxLivermore about Hacking the Future of Humanity. The videos were recently published and now you can watch it for yourself.
   From the Youtube Video:
  Jade Meskill believes we have a choice: we can continue to condemn our children to a life of mediocrity through our apathy….or we can deliver them a future made of magnificence. Delving into the true hacker ethic, Jade poses the question: “How do you hack the system to leave our kids a magnificent future?</description>
+      <content>&lt;p&gt;On June 8th, 2013 I spoke at TEDxLivermore about Hacking the Future of Humanity. The videos were recently published and now you can watch it for yourself.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rnFjdKL7Wpo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;From the Youtube Video:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Jade Meskill believes we have a choice: we can continue to condemn our children to a life of mediocrity through our apathy….or we can deliver them a future made of magnificence. Delving into the true hacker ethic, Jade poses the question: “How do you hack the system to leave our kids a magnificent future?”&lt;/p&gt;
+&lt;p&gt;The core principals of hacking: openness, sharing, decentralization of authority and free access to information, are shared from the perspective of someone who began a hackers’ life before becoming a teen. Jade also shares his core belief that the most important aspect of the hacker mentality is world improvement. According to Jade, the original definition of the word ‘hacker,’ (before it meant invasion of privacy or people taking over your computer), bespoke of people who were insanely curious about the new world of technology, of communication, and of computing power. Hackers were pioneers in a new frontier, building the basis of what fuels our modern, tech-driven world.&lt;/p&gt;
+&lt;p&gt;Jade Meskill works in the highly dynamic area of culture change, team improvement and organizational transformation. In this talk he discusses how his early education through Montessori school was a perfect match for supporting his penchant for creative exploration. He attributes the Montessori explorative learning style as a basis for his success as a serial entrepreneur and co-founder of Gangplank, the best collaborative workspace for creative people and innovative companies in Metro Phoenix. Gangplank is an unusual shared workspace that, instead of charging a fee, demands your energy, your time, and your passion for true co-creation. It is as much a set of values and cultural beliefs as it is a shared work environment, and it is growing, with venues in various cities in the US and Canada.&lt;/p&gt;
+&lt;p&gt;Learn more about Gangplank at &lt;a href=&#34;http://whatisgangplank.com/&#34;&gt;http://whatisgangplank.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;TEDxLivermore is organized by people from Livermore California who believe in the power of ideas to change the world. The mutual dependence of education and innovation means schools, industry and the broader community can join together to build an ecosystem where innovation + education can cross-fertilize and thrive.&lt;/p&gt;
+&lt;p&gt;In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized.* (*Subject to certain rules and regulations)&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
     </item>
     
     <item>
@@ -95,6 +321,27 @@ You can join the Facebook Group, or I just launched a newsletter that anyone can
  Or my personal favorite
  As long as no one is opposed …
  I hear this question, under many different guises, throughout the day. I cringe every time I hear it, especially when it comes out of my own mouth. The question sets up a challenge: “Do you dare prevent me from … ?</description>
+      <content>&lt;blockquote&gt;
+&lt;p&gt;Would anyone be opposed to … ?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Are you opposed to … ?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Or my personal favorite&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As long as no one is opposed …&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I hear this question, under many different guises, throughout the day. I cringe every time I hear it, &lt;em&gt;especially when it comes out of my own mouth&lt;/em&gt;. The question sets up a challenge: “Do you dare prevent me from … ?” Sometimes people will take you up on the challenge. If you are in a position of authority, many times they will not.&lt;/p&gt;
+&lt;h3 id=&#34;why-is-this-a-bad-thing&#34;&gt;Why is this a bad thing?&lt;/h3&gt;
+&lt;p&gt;The challenge will trigger a fight or flight response, increasing stress levels, dramatically decreasing the ability to create the best idea.&lt;/p&gt;
+&lt;p&gt;When this challenge is issued, the desired response is silence. &lt;strong&gt;Silence is not agreement.&lt;/strong&gt; Silence can be a seed of bitterness and resentment that will bear fruit later.&lt;/p&gt;
+&lt;p&gt;By setting up agreement through inaction, you have also accepted the full consequences of this decision. If things go wrong, and the inevitably do, don’t expect any support from “the unopposed.” Just because they weren’t opposed, doesn’t mean they support it.&lt;/p&gt;
+&lt;h3 id=&#34;what-to-do&#34;&gt;What to do&lt;/h3&gt;
+&lt;p&gt;Break the cycle of opposition. When I hear the &lt;em&gt;Opposed Question&lt;/em&gt;, I pause, and state that it is time to make a decision. Turn the question around to ask “Will you support … ?” and get a response from each individual regarding their support. You should not take action until support is unanimous, and the best ideas have been discovered.&lt;/p&gt;
+&lt;h3 id=&#34;this-is-going-to-take-forever&#34;&gt;This is going to take forever!&lt;/h3&gt;
+&lt;p&gt;Getting unanimous support for taking action is extremely difficult. Luckily, there is help readily available. I have found the &lt;!-- raw HTML omitted --&gt;Decider&lt;!-- raw HTML omitted --&gt; from the &lt;!-- raw HTML omitted --&gt;Core Protocols&lt;!-- raw HTML omitted --&gt; to be an extremely helpful way to make unanimous decisions (that are biased toward results) that support the best ideas. Try it with your team!&lt;/p&gt;
+&lt;p&gt;So as long as no one is opposed, I’m going to publish this now…&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -105,6 +352,121 @@ You can join the Facebook Group, or I just launched a newsletter that anyone can
       <guid>/2012/04/24/my-coaching-facilitation-toolkit/</guid>
       <description>I was asked recently to document what’s I use for my toolkit when I’m at a client engagement. I’ve experimented with many different options and materials over the last year and so I’ll share with you what I’m currently using.
 Before I show you the list, I want to share my philosophy that your toolkit needs to be simple, yet flexible. You never know what might happen during the course of a meeting you are facilitating, therefore you need to be prepared for anything.</description>
+      <content>&lt;p&gt;I was asked recently to document what’s I use for my toolkit when I’m at a client engagement. I’ve experimented with many different options and materials over the last year and so I’ll share with you what I’m currently using.&lt;/p&gt;
+&lt;p&gt;Before I show you the list, I want to share my philosophy that your toolkit needs to be simple, yet flexible. You never know what might happen during the course of a meeting you are facilitating, therefore you need to be prepared for anything. I’ve found that having an assortment of simple, yet highly effective basic materials gives me the flexibility I need to pull off almost anything.&lt;/p&gt;
+&lt;p&gt;Let’s begin:&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Toolbox(es) – I have found using a common toolbox to be a great container for all this stuff. Bonus: it’s tons of fun to carry around and get strange looks from people. A toolbox appears very unusual to creative workers and helps encourage diversity of thought.&lt;/p&gt;
+&lt;p&gt;I use a 20″ toolbox as my main kit, and a 12.5″ toolbox as my grab-and-go kit.&lt;/p&gt;
+
+  &lt;figure class=&#34;left&#34; &gt;
+    &lt;img src=&#34;/wp-content/uploads/2012/04/toolboxes.jpg&#34;   /&gt;
+    
+      &lt;figcaption class=&#34;center&#34; &gt;Both my toolkits&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;Let’s begin with the small toolbox.&lt;/p&gt;
+&lt;p&gt;I use this one to facilitate meetings for up to 8 people, like simple retrospectives, or other meetings where I don’t need the full capabilities I have available to me.&lt;/p&gt;
+
+  &lt;figure class=&#34;left&#34; &gt;
+    &lt;img src=&#34;/wp-content/uploads/2012/04/small_toolbox.jpg&#34;   /&gt;
+    
+      &lt;figcaption class=&#34;center&#34; &gt;12.5 inch toolkit (link is to a similar, but yellower toolbox)&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+
+  &lt;figure class=&#34;left&#34; &gt;
+    &lt;img src=&#34;/wp-content/uploads/2012/04/small_toolbox_inside.jpg&#34;   /&gt;
+    
+      &lt;figcaption class=&#34;center&#34; &gt;12.5 inch toolkit full of stuff&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;Here are it’s contents:&lt;/p&gt;
+
+  &lt;figure class=&#34;left&#34; &gt;
+    &lt;img src=&#34;/wp-content/uploads/2012/04/whiteboard_markers.jpg&#34;   /&gt;
+    
+      &lt;figcaption class=&#34;center&#34; &gt;Dry erase markers in both standard (Red, Green, Blue, Black) and other pastel colors. I walk into unknown meeting situations all the time. Are there markers? Do they still work? How badly damaged are they? Keeping my own set with me ensures I won&#39;t be scrambling.&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+
+  &lt;figure class=&#34;left&#34; &gt;
+    &lt;img src=&#34;/wp-content/uploads/2012/04/sharpies.jpg&#34;   /&gt;
+    
+      &lt;figcaption class=&#34;center&#34; &gt;Fine Point Sharpies&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;The Large Toolbox – I use this for more complex meetings, usually involving some highly creative activities. Enough for 20 people.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;The contents:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Bonus Material:&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</content>
     </item>
     
     <item>
@@ -116,6 +478,12 @@ Before I show you the list, I want to share my philosophy that your toolkit need
       <description>Make time to go to lunch with the people you are serving.
 I’ve learned far more about the organization, the people I’m working with, and the challenges that lie ahead by going to lunch with someone almost every single day I’m on site.
 I believe that lunch is one of the least respected and valued times in American culture. It is a critical time of day to step back and release from the focus of our daily work.</description>
+      <content>&lt;p&gt;&lt;strong&gt;Make time to go to lunch with the people you are serving.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I’ve learned far more about the organization, the people I’m working with, and the challenges that lie ahead by going to lunch with someone almost every single day I’m on site.&lt;/p&gt;
+&lt;p&gt;I believe that lunch is one of the least respected and valued times in American culture. It is a critical time of day to step back and release from the focus of our daily work. It is an ideal opportunity to restore sustenance not merely to our bodies, but our minds as well. I’ve forged or solidified many relationships over a simple lunch. The more you can talk, laugh, cry, and share life with those around you, the more human you become, the more influence you will be permitted to have.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lunch is a powerfully simple tool to leave behind lasting change.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;P.S. This is doubly important for those who are in a consultant role. There are many barriers to overcome when you are from the outside, especially with those who do not understand what you are doing here. Lunch is that safe opportunity to share a meal to reveal yourself as the amazing person you are. (without making it inappropriate, formal, or just plain weird, like a dinner with someone unfamiliar can be)&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -126,6 +494,23 @@ I believe that lunch is one of the least respected and valued times in American 
       <guid>/2011/12/09/agile-portfolio-management-game/</guid>
       <description>Lately I have been doing a lot of work with organizations on Portfolio Management. I needed to create a fun game to give an introduction to the challenges of an Agile Portfolio without being overwhelming.
 In April 2011, I attended the Agile Game Incubator at Agile 2011 and utilized the PLAID technique that Mike and Don taught us. This framework was extremely helpful for focusing me on my objectives and building a solid game.</description>
+      <content>&lt;p&gt;Lately I have been doing a lot of work with organizations on Portfolio Management. I needed to create a fun game to give an introduction to the challenges of an Agile Portfolio without being overwhelming.&lt;/p&gt;
+&lt;p&gt;In April 2011, I attended the &lt;a href=&#34;http://tastycupcakes.org/2011/07/agile-game-incubator-agile-games-2011/&#34;&gt;Agile Game Incubator&lt;/a&gt; at &lt;a href=&#34;http://program2011.agilealliance.org/event/4d303dd16c10043fe20f5a09049fbf46&#34;&gt;Agile 2011&lt;/a&gt; and utilized the PLAID technique that Mike and Don taught us. This framework was extremely helpful for focusing me on my objectives and building a solid game. If you haven’t checked out &lt;a href=&#34;http://tastycupcakes.org&#34;&gt;tastycupcakes.org&lt;/a&gt; and used some of the amazing games, you must check it out.&lt;/p&gt;
+&lt;p&gt;My goal was to create something meaningful, yet playful, that had a team building element included. I created some fun personas to the game to let people role play and laugh a lot. I’ve used this game successfully with clients and also with my fellow coaches at the &lt;a href=&#34;http://www.scrumalliance.org/events/331-scrum-coaching-retreat-boulder-co&#34;&gt;Scrum Coaches Retreat 2011&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here is an introduction to the game that I created and you can find a link to download the facilitator’s kit at the bottom of this post. If you have any improvements or suggestions, please comment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The management team of Zebco, Inc. has too many projects, too few resources. This game teaches teams how to prioritize the people and resources they have available and try to maximize their effectiveness.&lt;/p&gt;
+&lt;p&gt;Some randomness is introduced by the dice roll. This helps simulate reality when unexpected things happen and makes the game more fun.&lt;/p&gt;
+&lt;p&gt;This game is sized for a team of 3-7 people. For larger groups, split them into smaller teams of 3-7 people and provide them with extra copies of all materials.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lead Objectives&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Learn how delicate the balance of projects can be&lt;/li&gt;
+&lt;li&gt;Learn how to manage limited resources&lt;/li&gt;
+&lt;li&gt;Learn to deal with conflict&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</content>
     </item>
     
     <item>
@@ -136,6 +521,34 @@ In April 2011, I attended the Agile Game Incubator at Agile 2011 and utilized t
       <guid>/2011/06/16/how-not-to-have-a-fierce-conversation/</guid>
       <description>I have been reading the book [amazon ASIN=”038552904X”]Fierce Conversations[/amazon]. It has helped me to have a much more direct approach to difficult conversations, especially the ones that you really want to put off because they are so uncomfortable.
 Recently at Integrum we have been undergoing a lot of deep, radical change, more about that in a later post. This has required me to have some very honest conversations with my entire team, much of it unpleasant.</description>
+      <content>&lt;p&gt;I have been reading the book [amazon ASIN=”038552904X”]Fierce Conversations[/amazon]. It has helped me to have a much more direct approach to difficult conversations, especially the ones that you really want to put off because they are so uncomfortable.&lt;/p&gt;
+&lt;p&gt;Recently at Integrum we have been undergoing a lot of deep, radical change, more about that in a later post. This has required me to have some very honest conversations with my entire team, much of it unpleasant. I don’t like confrontation; I don’t like to tell people that they need to move on (as in: time to work somewhere else). I’ve had to do that many times in the last few months. Reading this book has completely changed my approach. I don’t have it down to a science yet, and it’s not my first inclination, but I’m working hard to improve myself and my communication style.&lt;/p&gt;
+&lt;p&gt;Interestingly enough, today I got a letter in the mail: no return address, unfamiliar handwriting on the front. Anthrax jokes ensued. What was inside was almost as dangerous.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jademeskill.com/wp-content/uploads/2011/06/HateMail.png&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Jade&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Jade everyone really likes and respects you. No one is denying you have a great business model with Gangplank and Integrum. But lately a day doesn’t go by without hearing something negative you have said about someone else. It seems your ego is getting in the way of your business. It hardly seems that the founder of Gangplank should be bad mouthing people constantly. We know you are smart, but that doesn’t mean everyone else is stupid. The foundation you are seeking to build is exactly the foundation you are destroying.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After the initial shock wore off, I started thinking… Wow, thank you anonymous person (that’s sarcasm by the way, one of my greatest gifts (that’s double sarcasm, Inception sarcasm)). It’s great that you feel that way, but now what? How do I ask questions? How do I get real feedback? Am I really doing this? This kind of Anonymous complaining is not helpful at all. It saddens me that whoever wrote this thought they were being courageous by sending this letter, but in reality, revealed the opposite. Engaging in a direct conversation addressing your issues with someone is one of the bravest things you can ever do.&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Derek Neighbors&lt;!-- raw HTML omitted --&gt; recently wrote a post called &lt;!-- raw HTML omitted --&gt;You Can’t Handle The Truth&lt;!-- raw HTML omitted --&gt;, where he talks about dealing with people’s criticism of you. He states you have two choices Ignore the Criticism, or Fix the Problem. The challenge with Anonymous feedback is it’s impossible to know what to do… you can only look inside your own mind. It’s very difficult to be completely honest with yourself. How can you not be influenced by your own perceptions?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;No man was ever so much deceived by another as by himself.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;– Fulke Greville&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So how do I deal with something like this? The honest truth is I don’t let things like this bother me too much. I try every day to be the best person I know how to be. Somedays I am a failure, but the path to being human is about the grace we extend to each other every new day, and challenging each other to rise to new heights. We are losing this skill as a race; too afraid to challenge, too afraid to speak up, too afraid to sign your own name. That’s why I’m publishing this here, radical transparency is scary, I really don’t want everyone to know that someone thinks these kinds of things about me. What will my mother say?&lt;/p&gt;
+&lt;p&gt;Here’s to pushing myself and to a better tomorrow!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The human race is a race of cowards; and I am not only marching in that procession but carrying a banner.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;– Mark Twain&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt; &lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -145,6 +558,14 @@ Recently at Integrum we have been undergoing a lot of deep, radical change, more
       
       <guid>/2010/11/24/why-i-became-a-certified-scrummaster/</guid>
       <description>On November 22nd I officially became a Certified ScrumMaster(CSM). I went to my CSM training with Michael Vizdos. I was surprised at what I was able to learn, and the level of conversation was much higher than I had anticipated. To put things in context, we have been using Scrum at Integrum for over 4 years, we have had multiple other CSMs and a CSP on staff, so I figured that I’d heard it all before.</description>
+      <content>&lt;p&gt;On November 22nd I officially became a &lt;!-- raw HTML omitted --&gt;Certified ScrumMaster&lt;!-- raw HTML omitted --&gt; (CSM). I went to my CSM training with &lt;!-- raw HTML omitted --&gt;Michael Vizdos&lt;!-- raw HTML omitted --&gt;. I was surprised at what I was able to learn, and the level of conversation was much higher than I had anticipated. To put things in context, we have been using Scrum at Integrum for over 4 years, we have had multiple other CSMs and a CSP on staff, so I figured that I’d heard it all before.&lt;/p&gt;
+&lt;p&gt;Michael was an excellent teacher, he was engaging, extremely sensitive to the level of knowledge of the other class members and adjusted his content and conversation accordingly. Luckily the other attendees all had some Scrum experience, so we were able to dig into the topics at a little bit deeper level. If you are thinking of taking a CSM class, I would highly encourage you to take one with Vizdos. His experience running and working with large, technical professional service organizations really resonated with me.&lt;/p&gt;
+&lt;p&gt;So, as the CEO of Integrum, I know that I can never be the ScrumMaster of our team, nor do I want to be. Being a sometime developer on our team is hard enough with the awkward power dynamic of also being “the boss,” being the ScrumMaster would be next to impossible. So why did I spend the money, take two days of my time, and invest so much mental energy into getting certified when I cannot actively take on the role of ScrumMaster?&lt;/p&gt;
+&lt;p&gt;Part of the answer is, I believe in being well rounded and having a deep understanding of the practices of my company. As I mentioned earlier, we have been using Scrum (and XP) for over 4 years and I feel like I have a good handle on the day to day practice of Scrum. What I wanted to get out of the class was a deeper, more nuanced understanding of why we do the things we do. I’ve read the books, blogs, literature, etc., I’ve talked the talk, and walked the walk, but the one thing I haven’t done is engage in deep conversation about why we practice Scrum, and the role of a ScrumMaster, with someone outside our organization. I want to be sure our practices are mature, and where they are not mature yet, we are taking the right steps and achieving incremental improvements on a path to excellence. We are building a hyper-performance team at Integrum, so we need all the help, training, discipline and experience we can get.&lt;/p&gt;
+&lt;p&gt;I believe that great leaders, especially when dealing with engineers, also should be practitioners (this is a very nuanced statement, it should not be taken at face value, and perhaps I will address it in depth in another article). I want to feel the pressure, pain, and satisfaction of what I am expecting my employees to do so that I can be a better leader. I also want to be able to apply the principles of Scrum to our entire organization, from sales, to support, strategy to tactics. In order to run the organization under Scrum, I must require of myself an earnest understanding and appreciation of the principles and practices of Scrum.&lt;/p&gt;
+&lt;p&gt;I am going to be challenging myself to implement more elements of Scrum to how we run the business itself. I can already predict that this is going to be very challenging to the leadership, not because we don’t believe in Scrum, but simply because sticking to the practice of Scrum is difficult. I anticipate we will go through &lt;!-- raw HTML omitted --&gt;Tuckman’s stages of group development&lt;!-- raw HTML omitted --&gt;, I imagine some hard conversations being had. We will fail, fast and often. We will talk about why we failed, and how we can do it better next time. We will improve, week after week. Before we know it, we will be more productive, more organized, and more successful than we were a short time before. We will accomplish things we never thought we had the time for.&lt;/p&gt;
+&lt;p&gt;We will change the world.&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -157,6 +578,11 @@ Recently at Integrum we have been undergoing a lot of deep, radical change, more
 Gee thanks Apple for that insightful, descriptive message. Surely with all your advanced binary scanning, static analysis, Application Uploader, etc. all you can give us is a most unhelpful “Invalid Binary”?
 If you are suffering from “Invalid Binary” issues, and have done everything short of sacrificing small farm animals, try this trick.
 If your Entitlements.plist file was generated with an version of Xcode prior Xcode 3.2.3, remove Entitlements.plist and regenerate it using Xcode 3.</description>
+      <content>&lt;p&gt;Invalid Binary.&lt;/p&gt;
+&lt;p&gt;Gee thanks Apple for that insightful, descriptive message.  Surely with all your advanced binary scanning, static analysis, Application Uploader, etc. all you can give us is a most unhelpful “Invalid Binary”?&lt;/p&gt;
+&lt;p&gt;If you are suffering from “Invalid Binary” issues, and have done everything short of sacrificing small farm animals, try this trick.&lt;/p&gt;
+&lt;p&gt;If your Entitlements.plist file was generated with an version of Xcode prior Xcode 3.2.3, remove Entitlements.plist and regenerate it using Xcode 3.2.3.  You don’t need to change any of the options generated on your new Entitlements.plist file, just recompile and submit again. Hopefully this helps someone.&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -170,6 +596,12 @@ Install the XCode 3.2.3 with iOS4 in /Developer
 Install XCode 3.2.2 with iPhone OS 3.2 in /Developer322
 Install latest XCode 4.0 developer preview in /DeveloperBeta
 This makes it trivially easy to support the older SDKs and toolsets for handling your legacy iPhone applications.</description>
+      <content>&lt;p&gt;It’s actually really easy, here’s how I’ve set it up:&lt;/p&gt;
+&lt;p&gt;Install the XCode 3.2.3 with iOS4 in /Developer&lt;/p&gt;
+&lt;p&gt;Install XCode 3.2.2 with iPhone OS 3.2 in /Developer322&lt;/p&gt;
+&lt;p&gt;Install latest XCode 4.0 developer preview in /DeveloperBeta&lt;/p&gt;
+&lt;p&gt;This makes it trivially easy to support the older SDKs and toolsets for handling your legacy iPhone applications.&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -180,6 +612,12 @@ This makes it trivially easy to support the older SDKs and toolsets for handling
       <guid>/2010/04/25/a-brave-new-world/</guid>
       <description>No, not a [amazon ASIN=”0060850523″]dystopian novel about eugenics[/amazon], this is my re-attempt to commit to a blogging world.
 Hello all faithful followers (yes, Mom, I’m talking to you). Today is a new day, a new dawn, a fresh start, what have you. I have decided that I need to make a new commitment to blogging. I need to force myself to practice and dramatically improve my writing and communication skills. I had previously maintained a blog over at http://iamruinous.</description>
+      <content>&lt;p&gt;No, not a [amazon ASIN=”0060850523″]dystopian novel about eugenics[/amazon], this is my re-attempt to commit to a blogging world.&lt;/p&gt;
+&lt;p&gt;Hello all faithful followers (yes, Mom, I’m talking to you). Today is a new day, a new dawn, a fresh start, what have you. I have decided that I need to make a new commitment to blogging. I need to force myself to practice and dramatically improve my writing and communication skills. I had previously maintained a blog over at &lt;a href=&#34;http://iamruinous.com&#34;&gt;http://iamruinous.com&lt;/a&gt;, but blogged very infrequently and unprofessionally.&lt;/p&gt;
+&lt;p&gt;Times have changed. I have been stockpiling a lot of topics over the last couple of years as I have worked in and on my business (&lt;a href=&#34;http://integrumtech.com&#34;&gt;Integrum Technologies&lt;/a&gt;), helped to create a revolutionary movement (&lt;a href=&#34;http://gangplankhq.com&#34;&gt;Gangplank&lt;/a&gt;), continued to faithfully serve (&lt;a href=&#34;http://santancc.com&#34;&gt;SanTan Christian Center&lt;/a&gt;), and have been experimenting with new technologies and dealing with human and technical challenges.&lt;/p&gt;
+&lt;p&gt;I am steeling my discipline to blog once per week on any one of the above topics. We’ll see how it goes…&lt;/p&gt;
+&lt;p&gt;Note: Considering it took me 2 weeks to even get this posted up, I’m not feeling very optimistic :-/&lt;/p&gt;
+</content>
     </item>
     
   </channel>

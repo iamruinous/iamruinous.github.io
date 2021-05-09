@@ -1,330 +1,200 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/about/</loc>
-    <lastmod>2019-04-25T12:43:19-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-04-25T12:43:19-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-05-08T18:43:19-07:00</lastmod>
+  </url><url>
     <loc>/tags/computes/</loc>
     <lastmod>2019-04-25T11:59:26-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/distributed-computing/</loc>
     <lastmod>2019-04-25T11:59:26-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/distributed-systems/</loc>
     <lastmod>2019-04-25T11:59:26-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2019-04-25T11:59:26-07:00</lastmod>
+  </url><url>
     <loc>/posts/</loc>
     <lastmod>2019-04-25T11:59:26-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/startup/</loc>
     <lastmod>2019-04-25T11:59:26-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/supercomputer/</loc>
     <lastmod>2019-04-25T11:59:26-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
     <lastmod>2019-04-25T11:59:26-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2018-01-02_to-infinity-and-beyond/</loc>
     <lastmod>2019-04-25T11:59:26-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2016-03-25-the-duh-framework/</loc>
     <lastmod>2016-03-25T07:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/amazon/</loc>
     <lastmod>2015-06-13T17:31:22+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/aws/</loc>
     <lastmod>2015-06-13T17:31:22+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/2015/06/13/bluegreen-deploys-with-kubernetes-and-amazon-elb/</loc>
     <lastmod>2015-06-13T17:31:22+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/</loc>
     <lastmod>2015-06-13T17:31:22+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/code/</loc>
     <lastmod>2015-06-13T17:31:22+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/devops/</loc>
     <lastmod>2015-06-13T17:31:22+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/docker/</loc>
     <lastmod>2015-06-13T17:31:22+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/elb/</loc>
     <lastmod>2015-06-13T17:31:22+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/infrastructure/</loc>
     <lastmod>2015-06-13T17:31:22+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/kubernetes/</loc>
     <lastmod>2015-06-13T17:31:22+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/work/</loc>
     <lastmod>2015-06-13T17:31:22+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/2015/02/02/programming-philosophy/</loc>
     <lastmod>2015-02-02T08:16:23+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/agile/</loc>
     <lastmod>2014-01-27T15:25:24+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/autonomy/</loc>
     <lastmod>2014-01-27T15:25:24+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/theses/</loc>
     <lastmod>2014-01-27T15:25:24+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/2014/01/27/twenty-something-theses-of-autonomy/</loc>
     <lastmod>2014-01-27T15:25:24+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/gangplank/</loc>
     <lastmod>2013-09-14T04:52:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/2013/09/13/gangplank-on-arizona-horizon/</loc>
     <lastmod>2013-09-14T04:52:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/life/</loc>
     <lastmod>2013-09-14T04:52:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/pbs/</loc>
     <lastmod>2013-09-14T04:52:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/video/</loc>
     <lastmod>2013-09-14T04:52:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/hacking/</loc>
     <lastmod>2013-09-13T05:52:29+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/2013/09/12/hacking-the-future-of-humanity-at-tedxlivermore/</loc>
     <lastmod>2013-09-13T05:52:29+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/humanity/</loc>
     <lastmod>2013-09-13T05:52:29+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/speaking/</loc>
     <lastmod>2013-09-13T05:52:29+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/tedx/</loc>
     <lastmod>2013-09-13T05:52:29+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/tedxlivermore/</loc>
     <lastmod>2013-09-13T05:52:29+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/core-protocols/</loc>
     <lastmod>2013-06-26T15:27:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/decider/</loc>
     <lastmod>2013-06-26T15:27:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/decisions/</loc>
     <lastmod>2013-06-26T15:27:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/2013/06/26/is-anyone-opposed/</loc>
     <lastmod>2013-06-26T15:27:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/leadership/</loc>
     <lastmod>2013-06-26T15:27:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/teams/</loc>
     <lastmod>2013-06-26T15:27:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/coaching/</loc>
     <lastmod>2012-04-25T01:32:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/facilitation/</loc>
     <lastmod>2012-04-25T01:32:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/2012/04/24/my-coaching-facilitation-toolkit/</loc>
     <lastmod>2012-04-25T01:32:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/toolbox/</loc>
     <lastmod>2012-04-25T01:32:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/toolkit/</loc>
     <lastmod>2012-04-25T01:32:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/#protip/</loc>
     <lastmod>2012-04-23T18:50:05+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/lunch/</loc>
     <lastmod>2012-04-23T18:50:05+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/2012/04/23/lunch-a-crucial-coaching-technique/</loc>
     <lastmod>2012-04-23T18:50:05+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/2011/12/09/agile-portfolio-management-game/</loc>
     <lastmod>2011-12-09T19:10:38+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/2011/06/16/how-not-to-have-a-fierce-conversation/</loc>
     <lastmod>2011-06-17T03:37:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/scrum/</loc>
     <lastmod>2010-11-24T06:16:35+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/2010/11/24/why-i-became-a-certified-scrummaster/</loc>
     <lastmod>2010-11-24T06:16:35+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ios3/</loc>
     <lastmod>2010-08-10T05:45:02+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ios4/</loc>
     <lastmod>2010-08-10T05:45:02+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/iphone/</loc>
     <lastmod>2010-08-10T05:45:02+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/2010/08/10/itunes-connect-invalid-binary/</loc>
     <lastmod>2010-08-10T05:45:02+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/2010/06/15/how-to-build-iphone-3-0-and-ios4-apps-on-the-same-machine/</loc>
     <lastmod>2010-06-15T05:44:36+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/xcode/</loc>
     <lastmod>2010-06-15T05:44:36+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/2010/04/25/a-brave-new-world/</loc>
     <lastmod>2010-04-25T19:09:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/faith/</loc>
     <lastmod>2010-04-25T19:09:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/play/</loc>
     <lastmod>2010-04-25T19:09:42+00:00</lastmod>
   </url>
-  
 </urlset>

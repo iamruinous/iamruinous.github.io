@@ -6,11 +6,7 @@
     <description>Recent content in ios3 on Jade Meskill</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Aug 2010 05:45:02 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/ios3/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 10 Aug 2010 05:45:02 +0000</lastBuildDate><atom:link href="/tags/ios3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iTunes Connect: Invalid Binary</title>
       <link>/2010/08/10/itunes-connect-invalid-binary/</link>
@@ -21,6 +17,11 @@
 Gee thanks Apple for that insightful, descriptive message. Surely with all your advanced binary scanning, static analysis, Application Uploader, etc. all you can give us is a most unhelpful “Invalid Binary”?
 If you are suffering from “Invalid Binary” issues, and have done everything short of sacrificing small farm animals, try this trick.
 If your Entitlements.plist file was generated with an version of Xcode prior Xcode 3.2.3, remove Entitlements.plist and regenerate it using Xcode 3.</description>
+      <content>&lt;p&gt;Invalid Binary.&lt;/p&gt;
+&lt;p&gt;Gee thanks Apple for that insightful, descriptive message.  Surely with all your advanced binary scanning, static analysis, Application Uploader, etc. all you can give us is a most unhelpful “Invalid Binary”?&lt;/p&gt;
+&lt;p&gt;If you are suffering from “Invalid Binary” issues, and have done everything short of sacrificing small farm animals, try this trick.&lt;/p&gt;
+&lt;p&gt;If your Entitlements.plist file was generated with an version of Xcode prior Xcode 3.2.3, remove Entitlements.plist and regenerate it using Xcode 3.2.3.  You don’t need to change any of the options generated on your new Entitlements.plist file, just recompile and submit again. Hopefully this helps someone.&lt;/p&gt;
+</content>
     </item>
     
   </channel>

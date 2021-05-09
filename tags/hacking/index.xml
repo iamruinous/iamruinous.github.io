@@ -6,11 +6,7 @@
     <description>Recent content in hacking on Jade Meskill</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Sep 2013 05:52:29 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 13 Sep 2013 05:52:29 +0000</lastBuildDate><atom:link href="/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hacking The Future of Humanity at TEDxLivermore</title>
       <link>/2013/09/12/hacking-the-future-of-humanity-at-tedxlivermore/</link>
@@ -20,6 +16,22 @@
       <description>On June 8th, 2013 I spoke at TEDxLivermore about Hacking the Future of Humanity. The videos were recently published and now you can watch it for yourself.
   From the Youtube Video:
  Jade Meskill believes we have a choice: we can continue to condemn our children to a life of mediocrity through our apathy….or we can deliver them a future made of magnificence. Delving into the true hacker ethic, Jade poses the question: “How do you hack the system to leave our kids a magnificent future?</description>
+      <content>&lt;p&gt;On June 8th, 2013 I spoke at TEDxLivermore about Hacking the Future of Humanity. The videos were recently published and now you can watch it for yourself.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rnFjdKL7Wpo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;From the Youtube Video:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Jade Meskill believes we have a choice: we can continue to condemn our children to a life of mediocrity through our apathy….or we can deliver them a future made of magnificence. Delving into the true hacker ethic, Jade poses the question: “How do you hack the system to leave our kids a magnificent future?”&lt;/p&gt;
+&lt;p&gt;The core principals of hacking: openness, sharing, decentralization of authority and free access to information, are shared from the perspective of someone who began a hackers’ life before becoming a teen. Jade also shares his core belief that the most important aspect of the hacker mentality is world improvement. According to Jade, the original definition of the word ‘hacker,’ (before it meant invasion of privacy or people taking over your computer), bespoke of people who were insanely curious about the new world of technology, of communication, and of computing power. Hackers were pioneers in a new frontier, building the basis of what fuels our modern, tech-driven world.&lt;/p&gt;
+&lt;p&gt;Jade Meskill works in the highly dynamic area of culture change, team improvement and organizational transformation. In this talk he discusses how his early education through Montessori school was a perfect match for supporting his penchant for creative exploration. He attributes the Montessori explorative learning style as a basis for his success as a serial entrepreneur and co-founder of Gangplank, the best collaborative workspace for creative people and innovative companies in Metro Phoenix. Gangplank is an unusual shared workspace that, instead of charging a fee, demands your energy, your time, and your passion for true co-creation. It is as much a set of values and cultural beliefs as it is a shared work environment, and it is growing, with venues in various cities in the US and Canada.&lt;/p&gt;
+&lt;p&gt;Learn more about Gangplank at &lt;a href=&#34;http://whatisgangplank.com/&#34;&gt;http://whatisgangplank.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;TEDxLivermore is organized by people from Livermore California who believe in the power of ideas to change the world. The mutual dependence of education and innovation means schools, industry and the broader community can join together to build an ecosystem where innovation + education can cross-fertilize and thrive.&lt;/p&gt;
+&lt;p&gt;In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized.* (*Subject to certain rules and regulations)&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
     </item>
     
   </channel>
